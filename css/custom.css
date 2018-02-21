@@ -1,0 +1,55 @@
+.email-card .user-body .page-list li.active, 
+.email-card .user-body .page-list li:hover {
+    background-color: #f7f7f7!important;
+    /*border-left: 5px solid #e84b3b;*/
+}
+.card-block {
+    border-bottom: 1px solid #ddd;
+}
+.label-list a.label-normal:before {
+    background-color: #0073aa;
+}
+.label-list a.label-low:before {
+    background-color: #3498DB;
+}
+.label-list a.label-medium:before {
+    background-color: #2ecc71;
+}
+.label-list a.label-high:before {
+    background-color: #f1c40f;
+}
+.label-list a.label-urgent:before {
+    background-color: #e74c3c;
+}
+.email-card .mail-body .mail-body-header {
+    margin-bottom: 22px!important;
+}
+.btn {
+    padding: 10px 15px!important;
+}
+.issue-title {
+    font-weight: 600;
+    font-size: 15px;
+    word-wrap: break-word;
+    white-space: -moz-pre-wrap !important;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    white-space: -webkit-pre-wrap;
+    word-break: break-all;
+    white-space: normal;
+}
+.issue-sub-title {
+    font-size: 12px; 
+    color: #586069; 
+    font-style: italic; 
+    font-weight: 400;
+}
+.fa21 {
+color: #0273aa;
+}
+.pcoded[theme-layout="vertical"] .pcoded-navbar .pcoded-item > li > a {
+    text-align: left;
+    padding: 12px 15px;
+}
