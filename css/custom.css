@@ -53,3 +53,7 @@ color: #0273aa;
     text-align: left;
     padding: 12px 15px;
 }
+
+.card .card-block code {
+    background-color: #fff!important;
+}
