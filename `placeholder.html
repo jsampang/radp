@@ -1,224 +1,30 @@
-<% extends '94041a13b4adde65c4e80cd7590447ed' %>
-	<% block content %>
-		<$ super() $>
-			<div class="page-body">
-				<div class="card">
-
-					<div class="card-block email-card">
-						<div class="row">
-
-							<div class="col-lg-12 col-xl-2">
-
-								<div class="user-body">
-									<div class="card-block">
-										<button class="btn btn-primary btn-block">Add New</button>
-									</div>
-									<ul class="page-list">
-										<li class="active">
-											<div class="mail-section">
-												<a href="#">All Open</a>
-												<label class="label label-info f-right">30</label>
-											</div>
-										</li>
-										<li>
-											<div class="mail-section">
-												<a href="#">My Ticket</a>
-												<label class="label label-info f-right">2</label>
-											</div>
-										</li>
-										<li>
-											<div class="mail-section">
-												<a href="#">Following</a>
-												<label class="label label-info f-right">7</label>
-											</div>
-										</li>
-										<li>
-											<div class="mail-section">
-												<a href="#">New</a>
-												<label class="label label-info f-right">4</label>
-											</div>
-										</li>
-										<li>
-											<div class="mail-section">
-												<a href="#">Assigned</a>
-												<label class="label label-info f-right">12</label>
-											</div>
-										</li>
-										<li>
-											<div class="mail-section">
-												<a href="#">For Review</a>
-												<label class="label label-info f-right">30</label>
-											</div>
-										</li>
-										<li>
-											<div class="mail-section">
-												<a href="#">Approved</a>
-												<label class="label label-info f-right">30</label>
-											</div>
-										</li>
-										<li>
-											<div class="mail-section">
-												<a href="#">Canceled</a>
-												<label class="label label-info f-right">1</label>
-											</div>
-										</li>
-										<li>
-											<div class="mail-section">
-												<a href="#">Close</a>
-												<label class="label label-info f-right">0</label>
-											</div>
-										</li>
-									</ul>
-									<ul class="card-block label-list">
-										<li>
-											<h5>Labels</h5></li>
-										<li>
-											<a class="label-urgent" href="#">Urgent</a>
-										</li>
-										<li>
-											<a class="label-high" href="#">High</a>
-										</li>
-										<li>
-											<a class="label-medium" href="#">Medium</a>
-										</li>
-										<li>
-											<a class="label-low" href="#">Low</a>
-										</li>
-										<li>
-											<a class="label-normal" href="#">Normal</a>
-										</li>
-									</ul>
-								</div>
+<div class="page-body">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card default-border">
+				<div class="card-header">
+					<h5>Page Name /  Editor</h5>
+					<div class="f-right">
+						<button id="edit-info-btn" type="button" class="btn btn-primary">
+							<i class="far fa-edit"></i> Edit
+						</button>
+						<button id="edit-info-btn" type="button" class="btn btn-primary">
+							<i class="fas fa-eye"></i> View
+						</button>
+						<div class="dropdown-primary dropdown open">
+							<button class="btn btn-primary dropdown-toggle waves-effect waves-light " type="button" id="dropdown-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i></button>
+							<div class="dropdown-menu" aria-labelledby="dropdown-2" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+								<a class="dropdown-item waves-light waves-effect" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+								<a class="dropdown-item waves-light waves-effect" href="#"><i class="fas fa-archive"></i> Archive</a>
 							</div>
-
-
-							<div class="col-lg-12 col-xl-10">
-
-								<div class="mail-body">
-									<div class="mail-body-header f-right d-inline-block">
-										<div class="btn-group" role="group" data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
-											<button type="button" class="btn btn-primary btn-xs waves-effect waves-light">
-												<i class="fas fa-ticket-alt"></i>
-											</button>
-											<button type="button" class="btn btn-primary btn-xs waves-effect waves-light">
-												<i class="fas fa-user"></i>
-											</button>
-											<button type="button" class="btn btn-primary btn-xs waves-effect waves-light">
-												<i class="fa fa-trash-alt"></i>
-											</button>
-										</div>
-										<div class="btn-group dropdown-split-primary">
-											<button type="button" class="btn btn-primary">
-												<i class="far fa-folder"></i>
-											</button>
-											<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												<span class="sr-only">Toggle primary</span>
-											</button>
-											<div class="dropdown-menu">
-												<a class="dropdown-item waves-effect waves-light" href="#">Action</a>
-												<a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
-												<a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a class="dropdown-item waves-effect waves-light" href="#">Separated link</a>
-											</div>
-										</div>
-										<div class="btn-group dropdown-split-primary">
-											<button type="button" class="btn btn-primary">
-												More
-											</button>
-											<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												<span class="sr-only">Toggle primary</span>
-											</button>
-											<div class="dropdown-menu">
-												<a class="dropdown-item waves-effect waves-light" href="#">Action</a>
-												<a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
-												<a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a class="dropdown-item waves-effect waves-light" href="#">Separated link</a>
-											</div>
-										</div>
-									</div>
-									<div class="mail-body-content">
-
-										<form>
-											<div class="form-group">
-												<input type="text" class="form-control" placeholder="Title">
-											</div>
-
-											<div class="form-group">
-												<textarea rows="10" cols="5" class="form-control" placeholder="Write a comment or drag your files here..."></textarea>
-											</div>
-
-											<!-- <div class="summernotexx email-summernote">
-																		<code class="text-muted">Write a comment or drag your files here...</code>
-
-																	</div> -->
-											<div class="form-group">
-												<input type="file" class="form-control">
-											</div>
-
-											<div class="form-group m-t-20">
-												<div class="row">
-													<div class="col-md-6">
-														<select name="select" class="form-control">
-															<option value="opt1">Select Ticket Type</option>
-															<option value="opt2">Choose 1</option>
-															<option value="opt3">Choose 2</option>
-														</select>
-													</div>
-													<div class="col-md-6">
-														<select name="select" class="form-control">
-															<option value="opt1">Assignee</option>
-															<option value="opt2">Choose 1</option>
-															<option value="opt3">Choose 2</option>
-														</select>
-													</div>
-													<div class="col-md-6">
-														<select name="select" class="form-control">
-															<option value="opt1">Priority</option>
-															<option value="opt2">Choose 1</option>
-															<option value="opt3">Choose 2</option>
-														</select>
-													</div>
-													<div class="col-md-6">
-														<select name="select" class="form-control">
-															<option value="opt1">Add Followers</option>
-															<option value="opt2">Choose 1</option>
-															<option value="opt3">Choose 2</option>
-														</select>
-													</div>
-													<div class="col-md-6">
-														<select name="select" class="form-control">
-															<option value="opt1">Due Date</option>
-															<option value="opt2">Choose 1</option>
-															<option value="opt3">Choose 2</option>
-														</select>
-													</div>
-													<div class="col-md-6">
-														<select name="select" class="form-control">
-															<option value="opt1">Select a Tag</option>
-															<option value="opt2">Choose 1</option>
-															<option value="opt3">Choose 2</option>
-														</select>
-													</div>
-													<div class="col-md-12 m-t-20">
-														<button type="submit" class="btn btn-primary m-b-0">Submit</button>
-													</div>
-
-
-
-												</div>
-											</div>
-										</form>
-
-									</div>
-								</div>
-
-							</div>
-
 						</div>
 					</div>
-
+				</div>
+				<div class="card-block">
+					<textarea rows="25" cols="5" class="form-control" placeholder="code here..."></textarea>
+					<button type="submit" class="btn btn-primary m-t-30">Save</button>
 				</div>
 			</div>
-			<% endblock %>
+		</div>
+	</div>
+</div>

@@ -33,6 +33,43 @@
 	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/custom.css">
 
+	<style>
+		.table a {
+			color: #333;
+		}
+		
+		.task-header {
+			background-color: #ddd;
+		}
+		
+		.card .card-header {
+			background-color: #f9f9f9!important;
+			padding: 15px 20px;
+		}
+		
+		.card-block h4 {
+			font-weight: 400;
+			font-size: 22px;
+		}
+		
+		.task-info {
+			font-weight: bold;
+			color: #0068a0;
+			font-style: italic;
+			font-size: 14px;
+		}
+		
+		@media (max-width: 767px) {
+			.task-top-btn {
+				width: 100%;
+			}
+		}
+		
+		.task-top-btn {
+			float: right;
+		}
+	</style>
+
 
 </head>
 
@@ -202,6 +239,13 @@
 										</li>
 									</ul>
 								</li>
+								<li>
+									<a href="editor.html">
+										<span class="pcoded-micon"><i class="fa21 fas fa-code"></i></span>
+										<span class="pcoded-mtext">Editor</span>
+										<span class="pcoded-mcaret"></span>
+									</a>
+								</li>
 							</ul>
 
 							<div class="pcoded-navigatio-lavel">Administration</div>
@@ -261,23 +305,60 @@
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="card default-border">
+
+
+
+
 													<div class="card-header">
-														<h5>Template</h5>
 
+														<div class="row">
+															<div class="col-md-12">
+																<button type="button" class="btn btn-success waves-effect waves-light" data-toggle="tooltip" data-placement="top" title=".btn-primary.badge">open
+																	<span class="badge">#2020</span>
+																</button>
+																<span class="d-inline"><b>Orginator:</b> <label class="label label-inverse-default">Jolene N.</label></span>
+																<span class="d-inline"><b>Assigned to:</b> <label class="label label-inverse-default">Joven S.</label></span>
+																<span class="d-inline"><b>Follower:</b> <label class="label label-inverse-default">Chris C.</label> <label class="label label-inverse-default">Christa J.</label></span>
+																<div class="task-top-btn">
+																	<button class="btn btn-info btn-outline-info"><i class="fas fa-check"></i> Approved</button>
+																	<button class="btn btn-info btn-outline-info"><i class="fas fa-plus"></i> New Task</button>
+																</div>
 
-														<div class="f-right">
-															<button id="edit-info-btn" type="button" class="btn btn-primary">
-																<i class="far fa-edit"></i> Edit
-															</button>
-															<button id="edit-info-btn" type="button" class="btn btn-primary">
-																<i class="fas fa-eye"></i> View
-															</button>
+															</div>
+
 														</div>
+
+
 													</div>
+
+
+
 													<div class="card-block">
-														<p>
+														<h4>Task Manager - Create New Task: Add "Assignee" field to new ticket template</h4>
+														<span class="task-info">Priority: <span class="label label-success">Medium</span> Date Started: 2018-02-20 15:49:38 Date Due:  02-28-2018</span>
+														<p class="m-t-20 m-b-40">
 															Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 														</p>
+														<div class="well">
+
+
+
+															<div class="row">
+																<div class="col-md-4">
+																	<span><select name="select" class="form-control">
+																					<option value="opt1">Select a Tag</option>
+																					<option value="opt2">Choose 1</option>
+																					<option value="opt3">Choose 2</option>
+																				</select></span>
+																</div>
+																<div class="col-md-4 ml-auto">
+																	<span>.col-md-4 .ml-auto</span>
+																</div>
+															</div>
+
+
+
+														</div>
 
 
 
@@ -287,7 +368,7 @@
 										</div>
 									</div>
 
-									
+
 
 								</div>
 							</div>
