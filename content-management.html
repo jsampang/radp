@@ -25,13 +25,18 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.0.0-6/css/ionicons.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="https://allyoucan.cloud/cdn/icofont/1.0.0beta/css/icofont.css" integrity="sha384-+iJF6xK4xnr+UBchttOu5eVXU3O/+WiateNu6D76ixKwFPrlm5NkgTnAR35tgjMU" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="js/icofont/css/icofont.css">
+	
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/component.css">
 	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/custom.css">
+	
+	<link rel="stylesheet" type="text/css" href="js/jstree/css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="js/treeview/treeview.css">
 
 
 
@@ -273,7 +278,7 @@
 											<div class="card-block email-card">
 												<div class="row">
 
-													<div class="col-lg-12 col-xl-2">
+													<div class="col-lg-12 col-xl-3">
 
 														<div class="user-body">
 															<div class="card-block">
@@ -281,14 +286,63 @@
 																	<button class="btn btn-primary btn-block"><i class="fas fa-plus"></i> Directory</button>
 																</a>
 															</div>
-															<p class="card-block"><code>Tree</code></p>
+													
+															<div class="card-block tree-view">
+															<div id="basicTree">
+																<ul>
+																	<li>Site
+																		<ul>
+																			<li data-jstree='{"opened":true}'>Pages
+																				<ul>
+																					<li data-jstree='{"selected":true,"type":"file"}'>index</li>
+																					<li data-jstree='{"type":"file"}'>contact-us</li>						
+																				</ul>
+																			</li>
+																			<li data-jstree='{"opened":true}'>Assets
+																				<ul>
+																					<li data-jstree='{"type":"file"}'>image1</li>
+																					<li data-jstree='{"type":"file"}'>logo</li>						
+																				</ul>
+																			</li>
+																			<li data-jstree='{"opened":true}'>Template
+																				<ul>
+																					<li data-jstree='{"type":"file"}'>base</li>
+																					<li data-jstree='{"type":"file"}'>standard-template</li>
+																				</ul>
+																			</li>	
+																			<li data-jstree='{"opened":true}'>Blocks
+																				<ul>
+																					<li data-jstree='{"type":"file"}'>top-nav</li>
+																					<li data-jstree='{"type":"file"}'>left-nav</li>
+																				</ul>
+																			</li>
+																			<li data-jstree='{"opened":true}'>Block Instance
+																				<ul>
+																					<li data-jstree='{"type":"file"}'>main-nav</li>
+																					<li data-jstree='{"type":"file"}'>bottom-nav</li>
+																				</ul>
+																			</li>
+																			<li data-jstree='{"opened":true}'>Database
+																				<ul>
+																					<li data-jstree='{"type":"file"}'>date1</li>
+																					<li data-jstree='{"type":"file"}'>data2</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</li>
+																	
+																</ul>
+															</div>
+														</div>
+															
+															
 															
 
 														</div>
 													</div>
 
 
-													<div class="col-lg-12 col-xl-10">
+													<div class="col-lg-12 col-xl-9">
 
 														<div class="mail-body">
 															<div class="mail-body-header f-right d-inline-block">
@@ -320,7 +374,22 @@
 																						<input type="checkbox" value="">
 																					</label>
 																				</td>
-																				<td><span class="issue-title"> Template</span>
+																				<td><span class="issue-title"> index</span>
+
+																				</td>
+																				<td>
+																					<label class="label label-lg label-success">Active</label>
+																				</td>
+																				<td><a href="#">Nov. 12, 2017</a></td>
+																				<td><span class="label label-primary">Open</span></td>
+																			</tr>
+																			<tr>
+																				<td>
+																					<label>
+																						<input type="checkbox" value="">
+																					</label>
+																				</td>
+																				<td><span class="issue-title"> contact-us</span>
 
 																				</td>
 																				<td>
@@ -422,6 +491,9 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+	
+	<script type="text/javascript" src="js/jstree/js/jstree.min.js"></script>
+	<script type="text/javascript" src="js/treeview/jquery.tree.js"></script>
 
 	<script type="text/javascript" src="https://jsampang.github.io/radp/js/radpscript.js"></script>
 	<script type="text/javascript" src="https://jsampang.github.io/radp/js/radp.min.js"></script>
