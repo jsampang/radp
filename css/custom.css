@@ -62,3 +62,24 @@ color: #0273aa;
     color: #333;
 
 }
+
+.right-sidebar {
+			position: fixed;
+			width: 241px;
+			height: 100%;
+			right: 0;
+			top: 0px;
+			background-color: #fff;
+			padding: 0;
+			z-index: 16;
+			font-family: Arial, sans-serif, Georgia, serif;
+			font-size: 11px;
+			-webkit-font-smoothing: antialiased;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.3);
+		}
