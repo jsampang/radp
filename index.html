@@ -33,6 +33,44 @@
 	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/custom.css">
 
+	<style>
+		.right-sidebar {
+			position: fixed;
+			width: 241px;
+			height: 100%;
+			right: 0;
+			top: 0px;
+			background-color: #fff;
+			padding: 0;
+			z-index: 16;
+			font-family: Arial, sans-serif, Georgia, serif;
+			font-size: 11px;
+			-webkit-font-smoothing: antialiased;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.3);
+		}
+		
+		.nav-item a {
+			background-color: #fff
+		}
+		
+		@media only screen and (max-width: 992px) {
+			.tab-content {
+				
+			}
+		}
+		
+		.sub-menu-files {
+			padding: 15px 18px 20px
+		}
+		
+	</style>
+
 
 </head>
 
@@ -68,6 +106,7 @@
 					</div>
 					<div class="navbar-container container-fluid">
 						<div>
+
 							<ul class="nav-left">
 								<li>
 									<div class="sidebar_toggle">
@@ -82,11 +121,12 @@
 									</a>
 								</li>
 								<li>
-									<span class="text-white"><!-- rowboatsoftware.com --></span>
+									<span class="text-white"></span>
 
 								</li>
 
 							</ul>
+
 							<ul class="nav-right">
 								<li class="user-profile header-notification">
 									<a href="#!">
@@ -121,120 +161,237 @@
 					<nav class="pcoded-navbar">
 						<div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
 						<div class="pcoded-inner-navbar main-menu">
-							<div class="pcoded-navigatio-lavel">Navigation</div>
+							
+							
 							<ul class="pcoded-item pcoded-left-item">
-								<li class="">
-									<a href="index.html">
-										<span class="pcoded-micon"><i class="fa21 fas fa-tachometer-alt"></i></span>
-										<span class="pcoded-mtext">Dashboard</span>
-										<span class="pcoded-mcaret"></span>
-									</a>
-								</li>
-								<li>
-									<a href="task-manager.html">
-										<span class="pcoded-micon"><i class="fa21 fas fa-ticket-alt"></i></span>
-										<span class="pcoded-mtext">Task Manager</span>
-										<span class="pcoded-mcaret"></span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<span class="pcoded-micon"><i class="fa21 fas fa-calendar-alt"></i></span>
-										<span class="pcoded-mtext">Calendar</span>
-										<span class="pcoded-mcaret"></span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<span class="pcoded-micon"><i class="fa21 fas fa-file-alt"></i></span>
-										<span class="pcoded-mtext">Document Management</span>
-										<span class="pcoded-mcaret"></span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<span class="pcoded-micon"><i class="fa21 fas fa-clock"></i></span>
-										<span class="pcoded-mtext">Time Tracker</span>
-										<span class="pcoded-mcaret"></span>
-									</a>
-								</li>
-							</ul>
-							<div class="pcoded-navigatio-lavel">Content Management</div>
-							<ul class="pcoded-item pcoded-left-item">
-								<li class="pcoded-hasmenu">
+								<li class="pcoded-hasmenu pcoded-trigger">
 									<a href="javascript:void(0)">
-										<span class="pcoded-micon"><i class="fa21 fas fa-file-code"></i></span>
-										<span class="pcoded-mtext">website</span>
+										<span class="pcoded-micon"><i class="fa21 fas fa-file"></i></span>
+										<span class="pcoded-mtext">Pages</span>
 										<span class="pcoded-mcaret"></span>
 									</a>
-									<ul class="pcoded-submenu">
-										<li class="">
-											<a href="">
-												<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-												<span class="pcoded-mtext">Pages</span>
-												<span class="pcoded-badge label label-primary ">NEW</span>
-												<span class="pcoded-mcaret"></span>
-											</a>
-										</li>
-										<li class="">
-											<a href="">
-												<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-												<span class="pcoded-mtext">Templates</span>
-												<span class="pcoded-badge label label-success ">NEW</span>
-												<span class="pcoded-mcaret"></span>
-											</a>
-										</li>
-										<li class="">
-											<a href="">
-												<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-												<span class="pcoded-mtext">Blocks</span>
-												<span class="pcoded-badge label label-info ">NEW</span>
-												<span class="pcoded-mcaret"></span>
-											</a>
-										</li>
-										<li class="">
-											<a href="">
-												<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-												<span class="pcoded-mtext">Assets</span>
-												<span class="pcoded-badge label label-warning ">NEW</span>
-												<span class="pcoded-mcaret"></span>
-											</a>
-										</li>
+									<ul class="pcoded-submenu" style="padding: 15px 18px 20px;">
+										<div class="m-b-20 ">
+											<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> New File</button>
+											<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> Add folder</button>
+										</div>
+										<ul style="line-height:30px">
+											<li>
+												<i class="fas fa-folder-open"></i> Pages
+												<ul class="m-l-20">
+													<li><i class="fas fa-folder-open"></i> folder</li>
+													<ul class="m-l-20">
+														<li><i class="far fa-file"></i> file 01</li>
+														<li><i class="far fa-file"></i> file 02</li>
+													</ul>
+
+												</ul>
+											</li>
+										</ul>
 									</ul>
 								</li>
-								<li>
-									<a href="editor.html">
-										<span class="pcoded-micon"><i class="fa21 fas fa-code"></i></span>
-										<span class="pcoded-mtext">Editor</span>
+								<li class="pcoded-hasmenu ">
+									<a href="javascript:void(0)">
+										<span class="pcoded-micon"><i class="fa21 fas fa-file-code"></i></span>
+										<span class="pcoded-mtext">Templates</span>
 										<span class="pcoded-mcaret"></span>
 									</a>
+									<ul class="pcoded-submenu" style="padding: 15px 18px 20px;">
+										<div class="m-b-20 ">
+											<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> New File</button>
+											<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> Add folder</button>
+										</div>
+										<ul style="line-height:30px">
+											<li>
+												<i class="fas fa-folder-open"></i> Templates
+												<ul class="m-l-20">
+													<li><i class="fas fa-folder-open"></i> folder</li>
+													<ul class="m-l-20">
+														<li><i class="far fa-file"></i> file 01</li>
+														<li><i class="far fa-file"></i> file 02</li>
+													</ul>
+
+												</ul>
+											</li>
+										</ul>
+									</ul>
+								</li>
+								<li class="pcoded-hasmenu ">
+									<a href="javascript:void(0)">
+										<span class="pcoded-micon"><i class="fa21 fas fa-th-large"></i></span>
+										<span class="pcoded-mtext">Blocks</span>
+										<span class="pcoded-mcaret"></span>
+									</a>
+									<ul class="pcoded-submenu" style="padding: 15px 18px 20px;">
+										<div class="m-b-20 ">
+											<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> New File</button>
+											<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> Add folder</button>
+										</div>
+										<ul style="line-height:30px">
+											<li>
+												<i class="fas fa-folder-open"></i> Blocks
+												<ul class="m-l-20">
+													<li><i class="fas fa-folder-open"></i> folder</li>
+													<ul class="m-l-20">
+														<li><i class="far fa-file"></i> file 01</li>
+														<li><i class="far fa-file"></i> file 02</li>
+													</ul>
+
+												</ul>
+											</li>
+										</ul>
+									</ul>
+								</li>
+								<li class="pcoded-hasmenu ">
+									<a href="javascript:void(0)">
+										<span class="pcoded-micon"><i class="fa21 fas fa-images"></i></span>
+										<span class="pcoded-mtext">Assets</span>
+										<span class="pcoded-mcaret"></span>
+									</a>
+									<ul class="pcoded-submenu" style="padding: 15px 18px 20px;">
+										<div class="m-b-20 ">
+											<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> New File</button>
+											<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> Add folder</button>
+										</div>
+										<ul style="line-height:30px">
+											<li>
+												<i class="fas fa-folder-open"></i> Assets
+												<ul class="m-l-20">
+													<li><i class="fas fa-folder-open"></i> folder</li>
+													<ul class="m-l-20">
+														<li><i class="far fa-file"></i> file 01</li>
+														<li><i class="far fa-file"></i> file 02</li>
+													</ul>
+
+												</ul>
+											</li>
+										</ul>
+									</ul>
+								</li>
+							</ul>
+							
+							<!-- <div class="pcoded-navigatio-lavel">aa</div> -->
+
+							<!-- <ul class="nav nav-tabs md-tabs tabs-left b-none" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" data-toggle="tab" href="#home5" role="tab"><span class="pcoded-micon"><i class="fa21 fas fa-file"></i></span>
+										
+										<span class="pcoded-mcaret"></span></a>
+									<div class="slide"></div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#profile5" role="tab"><span class="pcoded-micon"><i class="fa21 fas fa-file-code"></i></span>
+										<span class="pcoded-mtext"></span>
+										<span class="pcoded-mcaret"></span></a>
+									<div class="slide"></div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#messages5" role="tab"><span class="pcoded-micon"><i class="fa21 fas fa-th-large"></i></span>
+										<span class="pcoded-mtext"></span>
+										<span class="pcoded-mcaret"></span></a>
+									<div class="slide"></div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#settings5" role="tab"><span class="pcoded-micon"><i class="fa21 fas fa-images"></i></span>
+										<span class="pcoded-mtext"></span>
+										<span class="pcoded-mcaret"></span></a>
+									<div class="slide"></div>
 								</li>
 							</ul>
 
-							<div class="pcoded-navigatio-lavel">Administration</div>
-							<ul class="pcoded-item pcoded-left-item">
-								<li class="">
-									<a href="">
-										<span class="pcoded-micon"><i class="fa21 fas fa-address-card"></i></span>
-										<span class="pcoded-mtext">Contacts</span>
-										<span class="pcoded-mcaret"></span>
-									</a>
-								</li>
-								<li class="">
-									<a href="">
-										<span class="pcoded-micon"><i class="fa21 fas fa-cogs"></i></span>
-										<span class="pcoded-mtext">Site Configuration</span>
-										<span class="pcoded-mcaret"></span>
-									</a>
-								</li>
-								<li class="">
-									<a href="">
-										<span class="pcoded-micon"><i class="fa21 fas fa-question-circle"></i></span>
-										<span class="pcoded-mtext">Help</span>
-										<span class="pcoded-mcaret"></span>
-									</a>
-								</li>
-							</ul>
+							<div class="tab-content tabs-left-content" style="padding: 15px 18px 20px; width: 185px; height:900px; border: 1px solid #b9b9b9">
+								<div class="tab-pane active" id="home5" role="tabpanel">
+									<div class="m-b-20 ">
+										<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> File</button>
+										<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> folder</button>
+									</div>
+									<ul style="line-height:30px">
+										<li>
+											<i class="fas fa-folder-open"></i> Pages
+											<ul class="m-l-20">
+												<li><i class="fas fa-folder-open"></i> folder</li>
+												<ul class="m-l-20">
+													<li><i class="far fa-file"></i> file</li>
+													<li><i class="far fa-file"></i> file</li>
+												</ul>
+
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-pane" id="profile5" role="tabpanel">
+									<div class="m-b-20 ">
+										<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> File</button>
+										<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> folder</button>
+									</div>
+									<ul style="line-height:30px">
+										<li>
+											<i class="fas fa-folder-open"></i> Templates
+											<ul class="m-l-20">
+												<li><i class="fas fa-folder-open"></i> folder</li>
+												<ul class="m-l-20">
+													<li><i class="far fa-file"></i> file</li>
+													<li><i class="far fa-file"></i> file</li>
+												</ul>
+
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-pane" id="messages5" role="tabpanel">
+									<div class="m-b-20 ">
+										<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> File</button>
+										<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> folder</button>
+									</div>
+									<ul style="line-height:30px">
+										<li>
+											<i class="fas fa-folder-open"></i> Blocks
+											<ul class="m-l-20">
+												<li><i class="fas fa-folder-open"></i> folder</li>
+												<ul class="m-l-20">
+													<li><i class="far fa-file"></i> file</li>
+													<li><i class="far fa-file"></i> file</li>
+												</ul>
+
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-pane" id="settings5" role="tabpanel">
+									<div class="m-b-20 ">
+										<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> File</button>
+										<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> folder</button>
+									</div>
+									<ul style="line-height:30px">
+										<li>
+											<i class="fas fa-folder-open"></i> Assets
+											<ul class="m-l-20">
+												<li><i class="fas fa-folder-open"></i> Images</li>
+												<ul class="m-l-20">
+													<li><i class="far fa-file"></i> file</li>
+													<li><i class="far fa-file"></i> file</li>
+												</ul>
+												<li><i class="fas fa-folder-open"></i> css</li>
+												<ul class="m-l-20">
+													<li><i class="far fa-file"></i> file</li>
+													<li><i class="far fa-file"></i> file</li>
+												</ul>
+												<li><i class="fas fa-folder-open"></i> js</li>
+												<ul class="m-l-20">
+													<li><i class="far fa-file"></i> file</li>
+													<li><i class="far fa-file"></i> file</li>
+												</ul>
+
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div> -->
+
+							
+
+
+
 						</div>
 					</nav>
 
@@ -242,7 +399,7 @@
 						<div class="pcoded-inner-content">
 							<div class="main-body">
 								<div class="page-wrapper">
-									<div class="page-header">
+									<!-- <div class="page-header">
 										<div class="page-header-title">
 											<h4>Editor</h4>
 										</div>
@@ -262,11 +419,11 @@
 										</div>
 
 
-									</div>
+									</div> -->
 
-									<div class="page-body">
-										<div class="row">
-											<div class="col-sm-12">
+									<div class="page-body" style="margin-right: 240px">
+										<div>
+											<div>
 												<div class="card default-border">
 													<div class="card-header">
 														<h5>Template</h5>
@@ -282,15 +439,46 @@
 														</div>
 													</div>
 													<div class="card-block">
-														<p>
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-														</p>
+
+														<div class="row m-b-30">
+															<div class="col-lg-12 col-xl-12">
+																<ul class="nav nav-tabs md-tabs" role="tablist">
+																	<li class="nav-item">
+																		<a class="nav-link active" data-toggle="tab" href="#content" role="tab">Content</a>
+																		<div class="slide"></div>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link" data-toggle="tab" href="#data" role="tab">Data</a>
+																		<div class="slide"></div>
+																	</li>
+																</ul>
+
+																<div class="tab-content card-block">
+																	<div class="tab-pane active" id="content" role="tabpanel">
+																		<textarea rows="25" cols="5" class="form-control" placeholder="code here..."></textarea>
+																		<button type="submit" class="btn btn-primary m-t-30">Save</button>
+																	</div>
+																	<div class="tab-pane" id="data" role="tabpanel">
+																		<textarea rows="25" cols="5" class="form-control" placeholder="data..."></textarea>
+																		<button type="submit" class="btn btn-primary m-t-30">Save</button>
+																	</div>
+																</div>
+															</div>
+
+														</div>
 
 
 
 													</div>
 												</div>
 											</div>
+											
+											<div class="right-sidebar">
+												<div class="m-20" style="margin-top: 80px">
+													<p>Right Nav</p>
+												</div>												
+											</div>
+
 										</div>
 									</div>
 
@@ -308,7 +496,10 @@
 				</div>
 			</div>
 		</div>
+		<!-- <div class="right-sidebar">aa</div> -->
 	</div>
+
+
 
 
 	<!--[if lt IE 9]>
@@ -371,7 +562,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-	<script type="text/javascript" src="https://jsampang.github.io/radp/js/radpscript.js"></script>
+	<script type="text/javascript" src="js/radpscript.js"></script>
 	<script type="text/javascript" src="https://jsampang.github.io/radp/js/radp.min.js"></script>
 	<script type="text/javascript" src="https://jsampang.github.io/radp/js/radpdemo.js"></script>
 
