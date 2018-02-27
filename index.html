@@ -30,11 +30,11 @@
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/component.css">
-	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/custom.css">
 
 	<style>
-		.right-sidebar {
+			.right-sidebar {
 			position: fixed;
 			width: 241px;
 			height: 100%;
@@ -59,16 +59,17 @@
 			background-color: #fff
 		}
 		
+		.page-body {
+			margin-right: 240px;
+		}
+		
 		@media only screen and (max-width: 992px) {
-			.tab-content {
-				
+			.right-sidebar {
+				display: none;
 			}
-		}
-		
-		.sub-menu-files {
-			padding: 15px 18px 20px
-		}
-		
+			.page-body {
+				margin-right: 0px;
+			}
 	</style>
 
 
@@ -131,7 +132,7 @@
 								<li class="user-profile header-notification">
 									<a href="#!">
 										<img src="https://cdn.rowboatsoftware.com/avatars/50x50_I6IlFzekdBbG9FUG.png" alt="User-Profile-Image" class="img-circle">
-										<span class="text-white">Joven Sampang</span>
+										<span class="text-white"></span>
 										<i class="ti-angle-down text-white"></i>
 									</a>
 									<ul class="show-notification profile-notification">
@@ -161,10 +162,10 @@
 					<nav class="pcoded-navbar">
 						<div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
 						<div class="pcoded-inner-navbar main-menu">
-							
-							
+
+
 							<ul class="pcoded-item pcoded-left-item">
-								<li class="pcoded-hasmenu pcoded-trigger">
+								<li class="pcoded-hasmenu">
 									<a href="javascript:void(0)">
 										<span class="pcoded-micon"><i class="fa21 fas fa-file"></i></span>
 										<span class="pcoded-mtext">Pages</span>
@@ -269,7 +270,7 @@
 									</ul>
 								</li>
 							</ul>
-							
+
 							<!-- <div class="pcoded-navigatio-lavel">aa</div> -->
 
 							<!-- <ul class="nav nav-tabs md-tabs tabs-left b-none" role="tablist">
@@ -388,7 +389,7 @@
 								</div>
 							</div> -->
 
-							
+
 
 
 
@@ -421,7 +422,7 @@
 
 									</div> -->
 
-									<div class="page-body" style="margin-right: 240px">
+									<div class="page-body">
 										<div>
 											<div>
 												<div class="card default-border">
@@ -472,11 +473,61 @@
 													</div>
 												</div>
 											</div>
-											
+
 											<div class="right-sidebar">
 												<div class="m-20" style="margin-top: 80px">
-													<p>Right Nav</p>
-												</div>												
+													<div class="row m-b-30">
+															<div class="col-lg-12 col-xl-12">
+																<ul class="nav nav-tabs md-tabs" role="tablist">
+																	<li class="nav-item">
+																		<a class="nav-link active" data-toggle="tab" href="#01" role="tab">
+																			<i class="fas fa-folder"></i>
+																		</a>
+																		<div class="slide"></div>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link" data-toggle="tab" href="#02" role="tab">
+																			<i class="fas fa-cogs"></i>
+																		</a>
+																		<div class="slide"></div>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link" data-toggle="tab" href="#03" role="tab">
+																			<i class="fas fa-archive"></i>
+																		</a>
+																		<div class="slide"></div>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link" data-toggle="tab" href="#04" role="tab">
+																			<i class="fas fa-copy"></i>
+																		</a>
+																		<div class="slide"></div>
+																	</li>
+																</ul>
+
+																<div class="tab-content card-block2 m-t-30">
+																	<div class="tab-pane active" id="01" role="tabpanel">
+																		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+																		<select name="select" class="form-control">
+																					<option value="opt1">Select Ticket Type</option>
+																					<option value="opt2">Choose 1</option>
+																					<option value="opt3">Choose 2</option>
+																				</select>
+																	</div>
+																	<div class="tab-pane" id="02" role="tabpanel">
+																		<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+																	</div>
+																	<div class="tab-pane" id="03" role="tabpanel">
+																		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+																	</div>
+																	<div class="tab-pane" id="04" role="tabpanel">
+																		<p>ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+												</div>
 											</div>
 
 										</div>
@@ -563,8 +614,8 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
 	<script type="text/javascript" src="js/radpscript.js"></script>
-	<script type="text/javascript" src="https://jsampang.github.io/radp/js/radp.min.js"></script>
-	<script type="text/javascript" src="https://jsampang.github.io/radp/js/radpdemo.js"></script>
+	<script type="text/javascript" src="js/radp.min.js"></script>
+	<script type="text/javascript" src="js/radpdemo.js"></script>
 
 
 
