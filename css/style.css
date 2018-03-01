@@ -27565,7 +27565,7 @@ body[themebg-pattern="pattern9"] {
 }
 
 .pcoded .pcoded-navbar[data-navbar-theme="themelight1"] .pcoded-item > li.pcoded-hasmenu .pcoded-submenu {
-	background-color: #E2E2E2;
+	background-color: #f7f7f7;
 }
 
 .pcoded .pcoded-navbar[data-navbar-theme="themelight1"] .pcoded-item > li.pcoded-hasmenu > a:after,
@@ -27623,7 +27623,7 @@ body[themebg-pattern="pattern9"] {
 }
 
 .pcoded .pcoded-navbar[data-navbar-theme="themelight1"] .pcoded-item > li.pcoded-trigger > a {
-	background: #fff;
+	    background: #f7f7f7;
 	border-bottom-color: #fff;
 }
 

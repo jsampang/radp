@@ -83,3 +83,50 @@ color: #0273aa;
 			backface-visibility: hidden;
 			box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.3);
 		}
+		
+		.nav-item a {
+			background-color: #fff
+		}
+		
+		.page-body {
+			margin-right: 240px;
+		}
+		
+		@media only screen and (max-width: 992px) {
+			.right-sidebar {
+				display: none;
+			}
+			.page-body {
+				margin-right: 0px;
+			}
+		}
+		
+		.custom-file-upload {
+			border: 1px solid #0073aa;
+			display: inline-block;
+			cursor: pointer;
+			border-radius: 4px;
+			text-transform: capitalize;
+			font-size: 15px;
+			padding: 10px 19px;
+			color: #004a6d;
+			font-size: 11px;
+		}
+		
+		input[type="file"] {
+			display: none;
+		}
+		
+		.custom-file-upload:hover {
+			background-color: #0073aa;
+			border-color: #0073aa;
+			color: #fff;
+			cursor: pointer;
+			-webkit-transition: all ease-in 0.3s;
+			transition: all ease-in 0.3s;
+		}
+		
+		.custom-breadcrumbs {
+			display: inline-block; 
+			color: #949494;
+		}
