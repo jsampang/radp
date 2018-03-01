@@ -27059,7 +27059,7 @@ body[themebg-pattern="pattern9"] {
 
 .pcoded .pcoded-navbar[active-item-theme="theme5"] .pcoded-item li:hover > a {
 	color: #fff !important;
-	background: #0073aa;
+	background: #f0f8fb;
 }
 
 .pcoded .pcoded-navbar[active-item-theme="theme5"] .pcoded-item li:hover > a:before {
@@ -27565,7 +27565,7 @@ body[themebg-pattern="pattern9"] {
 }
 
 .pcoded .pcoded-navbar[data-navbar-theme="themelight1"] .pcoded-item > li.pcoded-hasmenu .pcoded-submenu {
-	background-color: #C8EBF7;
+	background-color: #f0f8fb;
 }
 
 .pcoded .pcoded-navbar[data-navbar-theme="themelight1"] .pcoded-item > li.pcoded-hasmenu > a:after,
@@ -27623,7 +27623,7 @@ body[themebg-pattern="pattern9"] {
 }
 
 .pcoded .pcoded-navbar[data-navbar-theme="themelight1"] .pcoded-item > li.pcoded-trigger > a {
-	background: #C8EBF7;
+	background: #f0f8fb;
 	border-bottom-color: #fff;
 }
 
@@ -27646,7 +27646,7 @@ body[themebg-pattern="pattern9"] {
 }
 
 .pcoded .pcoded-navbar[data-navbar-theme="themelight1"] li:hover > a {
-	background-color: #C8EBF7!important;
+	background-color: #f0f8fb!important;
 }
 
 .pcoded .pcoded-header .navbar-logo[data-navbar-theme="theme1"] {
