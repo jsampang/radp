@@ -25660,14 +25660,14 @@ body.dark-layout .chat-bg {
 .pcoded[theme-layout="vertical"][vertical-nav-type="collapsed"] .pcoded-navbar .pcoded-item > li.pcoded-trigger {
 	display: block;
 	position: relative;
-	width: 255px;
+	width: 236px;
 	z-index: 1024;
 }
 
 .pcoded[theme-layout="vertical"][vertical-nav-type="collapsed"] .pcoded-navbar .pcoded-item > .pcoded-hasmenu.pcoded-trigger > .pcoded-submenu {
 	left: 45px;
 	position: absolute;
-	width: 210px;
+	width: 191px;
 	z-index: 1024;
 	border-left-style: solid;
 	border-left-width: 1px;
