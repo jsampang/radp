@@ -267,3 +267,104 @@ style="width: 200px; text-align: center; margin:20px"
 <body>
 </body>
 </html>
+
+
+
+<% extends '94041a13b4adde65c4e80cd7590447ed' %>
+	<% block content %>
+		<$ super() $>
+			<div class="page-body">
+				<div>
+					<div>
+						<div class="card default-border">
+							<div class="card-header">
+								<p class="custom-breadcrumbs f-18">Pages / Folder / file01 </p>
+
+
+								<div class="f-right">
+									<button id="edit-info-btn" type="button" class="btn btn-primary">
+										<i class="far fa-edit"></i> Edit
+									</button>
+									<button id="edit-info-btn" type="button" class="btn btn-primary">
+										<i class="fas fa-eye"></i> View
+									</button>
+								</div>
+							</div>
+							<div class="card-block">
+
+								<div class="row m-b-30">
+									<div class="col-lg-12 col-xl-12">
+										<ul class="nav nav-tabs md-tabs" role="tablist">
+											<li class="nav-item">
+												<a class="nav-link active" data-toggle="tab" href="#content" role="tab">Content</a>
+												<div class="slide"></div>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" data-toggle="tab" href="#data" role="tab">Data</a>
+												<div class="slide"></div>
+											</li>
+										</ul>
+
+										<div class="tab-content card-block">
+											<div class="tab-pane active" id="content" role="tabpanel">
+												<div class="code-editor">
+													<textarea rows="25" cols="5" class="form-control" id="codemirror"></textarea>
+												</div>
+												<div class="m-20">
+													<button type="submit" class="btn btn-primary m-t-30">Save</button>
+												</div>
+											</div>
+											<div class="tab-pane" id="data" role="tabpanel">
+												<div class="code-editor">
+													<textarea rows="25" cols="5" class="form-control" placeholder="data..."></textarea>
+												</div>
+												<div class="m-20">
+													<button type="submit" class="btn btn-primary m-t-30">Save</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+
+
+							</div>
+						</div>
+					</div>
+
+					<% include('ce84403cb08b66b013d71c5cc2b3fc53') %>
+
+				</div>
+			</div>
+			<% endblock %>
+				
+				
+				
+<style>
+.icon-folder {
+    position: relative;
+}
+ 
+/*replace the content value with the
+corresponding value from the list below*/
+ 
+.icon-folder:before {
+    content: "\f000";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+</syle>
+				
+				
+				class="icon-folder"
