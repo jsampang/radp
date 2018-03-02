@@ -145,9 +145,8 @@ input[type="file"] {
 .radp-projects {
     width: 200px;
     text-align: center;
-    margin: 15px 0px 0px 16px;
-    border: 1px solid #e2e2e2;
-    padding: 15px 13px 57px 13px;
+    margin: 14px;
+    padding: 2px 13px 57px 0px;
 }
 
 .code-editor {
