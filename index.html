@@ -32,6 +32,8 @@
 	<link rel="stylesheet" type="text/css" href="https://jsampang.github.io/radp/css/component.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/codemirror.min.css">
 
 </head>
 
@@ -458,7 +460,52 @@
 
 																<div class="tab-content card-block">
 																	<div class="tab-pane active" id="content" role="tabpanel">
-																		<textarea rows="25" cols="5" class="form-control" placeholder="code here..."></textarea>
+																		<textarea class="form-control" id="codemirror">
+	&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+  &lt;head&gt;
+
+  &lt;meta charset="utf-8"&gt;
+
+  &lt;title&gt;&lt;/title&gt;
+
+  &lt;!-- Main styles for this application --&gt;
+  &lt;link href="css/style.css" rel="stylesheet"&gt;
+
+  &lt;/head&gt;
+
+
+  &lt;body &gt;
+  &lt;header&gt;
+    ...
+  &lt;/header&gt;
+  &lt;div class="app-body"&gt;
+  &lt;div class="sidebar"&gt;
+      ...
+  &lt;/div&gt;
+  &lt;!-- Main content --&gt;
+  &lt;main class="main"&gt;
+
+  &lt;/main&gt;
+  &lt;aside class="aside-menu"&gt;
+      ...
+  &lt;/aside&gt;
+  &lt;/div&gt;
+  &lt;footer class="app-footer"&gt;
+    ...
+  &lt;/footer&gt;
+
+  &lt;!-- Bootstrap and necessary plugins --&gt;
+  &lt;script src=&lt;script src="vendors/js/jquery.min.js"&gt;&lt;/script&gt;&gt;&lt;/div&gt;
+
+  &lt;!-- Main scripts --&gt;
+  &lt;script src="js/app.js"&gt;&lt;/div&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt;
+									
+									</textarea>
+																		<!-- <textarea rows="25" cols="5" class="form-control" placeholder="code here..."></textarea> -->
 																		<button type="submit" class="btn btn-primary m-t-30">Save</button>
 																	</div>
 																	<div class="tab-pane" id="data" role="tabpanel">
@@ -618,6 +665,14 @@
 	<script type="text/javascript" src="js/radpscript.js"></script>
 	<script type="text/javascript" src="js/radp.min.js"></script>
 	<script type="text/javascript" src="js/radpdemo.js"></script>
+	
+	
+	<!-- Plugins and scripts required by this views -->
+  <script src="js/codemirror.min.js"></script>
+  <script src="js/xml.min.js"></script>
+
+  <!-- Custom scripts required by this view -->
+  <script src="js/code-editor.js"></script>
 
 
 
