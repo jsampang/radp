@@ -29,12 +29,12 @@ $(document).ready(function () {
 			phone: "overlay",
 		},
 		defaultVerticalMenu: {
-			desktop: "collapsed",
+			desktop: "expanded",
 			tablet: "collapsed",
 			phone: "offcanvas",
 		},
 		onToggleVerticalMenu: {
-			desktop: "expanded",
+			desktop: "collapsed",
 			tablet: "expanded",
 			phone: "expanded",
 		},
