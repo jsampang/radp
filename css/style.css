@@ -7747,6 +7747,10 @@ table thead .border-bottom-info th {
 	width: 45px;
 }
 
+.pcoded[theme-layout="vertical"][vertical-nav-type="collapsed"] .radp-projects{
+	width: 45px;
+}
+
 .sidebar_toggle a {
 	margin: -5px;
 	line-height: 1;
