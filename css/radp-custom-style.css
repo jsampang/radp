@@ -1,0 +1,173 @@
+/* RADP Custom CSS */
+
+button:focus {
+	outline: 0 !important;
+}
+
+.button:focus {
+	outline: 0 !important;
+}
+
+.panel-actions {
+	margin-top: -20px;
+	margin-bottom: 0;
+	text-align: right;
+}
+
+.panel-actions a {
+	color: #333;
+}
+
+.panel-fullscreen {
+	display: block;
+	z-index: 9999;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	overflow: auto;
+}
+
+.radp-projects {
+	width: 200px;
+	text-align: center;
+	margin: 14px;
+	padding: 2px 13px 57px 0px;
+	color: #000;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.file-icon:before {
+	content: "\f016";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #1badf8;
+	font-size: 14px;
+	padding-right: 0.5em;
+	/*position: absolute;*/
+	top: -4px;
+	left: 16px;
+}
+
+.folder-icon:before {
+	content: "\f07b";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #1badf8;
+	font-size: 14px;
+	padding-right: 0.5em;
+	/*position: absolute;*/
+	top: -4px;
+	left: 16px;
+}
+
+.tabsidebar {
+	float: left;
+	background-color: #fff;
+	width: 100%;
+}
+
+.tabsidebar button {
+	display: block;
+	background-color: inherit;
+	color: black;
+	padding: 0px 0px 0px;
+	width: 100%;
+	border: none;
+	outline: none;
+	text-align: left;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 14px;
+}
+
+.tabsidebar button:hover {
+	background-color: #F4F3F4;
+}
+
+.tabsidebar button.active {
+	background-color: #fff;
+}
+
+.accordion,
+.card {
+	border-radius: 0px!important;
+	border-bottom-width: 0px!important;
+	margin-bottom: 1px;
+}
+
+.accordion a:link,
+.card a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.accordion:hover,
+.card-header:hover {
+	background-color: #F4F3F4!important;
+}
+
+.accordion,
+.card-header {
+	background-color: #ffffff!important;
+	padding: 1.25rem;
+	margin-bottom: 0;
+	background-color: #f0f2f7;
+	border-bottom: 1px solid #e4e6eb;
+	border-left: 2px solid #67c2ef;
+	border-left-width: .25rem;
+	border-left-color: #67c2ef;
+}
+
+.trigger {
+	cursor: pointer;
+	font-size: 0.9375rem!important;
+	line-height: 24px;
+}
+
+.trigger:active {
+	color: #1badf8!important;
+}
+
+.trigger:focus {
+	color: #1badf8!important;
+}
+
+.trigger:hover {
+	color: #1badf8!important;
+}
+
+.trigger:visited {
+	color: #1badf8!important;
+}
+
+.trigger:selected {
+	color: #1badf8!important;
+}
+
+.toggle-fullscreen {
+	position: absolute;
+	top: 50px;
+	right: 20px;
+	color: #ddd;
+}
+
+.content-link {
+	cursor: pointer;
+}
+
+.content-link.selected {
+	color: #1badf8;
+	font-weight: bolder;
+}
