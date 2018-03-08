@@ -173,5 +173,5 @@ ul {
 }
 
 .aside-menu-off-canvas .aside-menu {
-    overflow: overlay;
+    overflow: auto;
 }
