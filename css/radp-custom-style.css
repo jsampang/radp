@@ -171,3 +171,7 @@ ul {
 	color: #1badf8;
 	font-weight: bolder;
 }
+
+.aside-menu-off-canvas .aside-menu {
+    overflow: overlay;
+}
