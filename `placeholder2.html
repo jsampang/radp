@@ -1,0 +1,14 @@
+<div id="editor-window">
+	<editor-window-component inline-template>
+		<ul v-if="editor.payloads && editor.payloads.length">
+			<div style="font-size: 16px; color: #757575;"><b>File:</b> {{ editor.meta.name}} <b>Key:</b> {{editor.meta.key}} </div>
+			<br>
+			<li v-for="payload of editor.payloads" :key='payload.type'>
+				<p style="white-space: pre-line;">{{ payload.type}}</p>
+				<textarea v-model="payload.payload[payload.type]" class="editor form-control" rows="25" cols="5" style="width: 100%"></textarea>
+				<br>
+				<button v-on:click="saveFilePayload(payload.type, payload.payload)" class="btn btn-primary m-b-20">Update</button>
+			</li>
+		</ul>
+	</editor-window-component>
+</div>
