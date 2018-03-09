@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="icon" href="https://jsampang.github.io/radp/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<title>Rowboat Software</title>
+
+	<!-- RADP style -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="tree-style.css">
+	<!-- code editor style -->
+	<link href="https://jsampang.github.io/radp/css/codemirror.min.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-off-canvas">
+
+	<header class="app-header navbar">
+		<button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="/pages/editor"></a>
+		<button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<ul class="nav navbar-nav d-md-down-none mr-auto">
+			<li class="nav-item px-3 text-white">
+				RADP <small>v2.1</small>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav ml-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					<img src="https://cdn.rowboatsoftware.com/avatars/50x50_I6IlFzekdBbG9FUG.png" class="img-avatar" alt="admin@rowboatsoftware.com">
+				</a>
+				<div class="dropdown-menu dropdown-menu-right">
+					<div class="dropdown-header text-center"> <strong>Welcome Admin</strong> </div>
+					<a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Account Setting</a>
+					<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+				</div>
+			</li>
+			<button class="navbar-toggler aside-menu-toggler" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</ul>
+	</header>
+
+	<div class="app-body">
+		<!-- left nav -->
+		<div class="sidebar">
+
+			<nav class="sidebar-nav">
+				<ul class="nav">
+
+					<li class="divider"></li>
+					<ul class="tree">
+						<li>
+							<input type="checkbox" checked="checked" id="t1" />
+							<label class="tree_label" for="t1">Template</label>
+							<ul>
+								<li>
+									<input type="checkbox" checked="checked" id="t2" />
+									<label for="t2" class="tree_label">Folder 1</label>
+									<ul>
+										<li><span class="tree_label file-icon">File 1</span></li>
+										<li><span class="tree_label file-icon">File 2</span></li>
+									</ul>
+								</li>
+								<li>
+									<input type="checkbox" checked="checked" id="t3" />
+									<label for="t3" class="tree_label">Folder 2</label>
+									<ul>
+										<li>
+											<input type="checkbox" id="t4" />
+											<label for="t4" class="tree_label">Folder 2.1</label>
+											<ul>
+												<li><span class="tree_label file-icon">File Level 3 </span></li>
+											</ul>
+										</li>
+										<li>
+											<input type="checkbox" id="t5" />
+											<label for="t5" class="tree_label">Folder 2.2</label>
+											<ul>
+												<li><span class="tree_label file-icon">File Level 3</span></li>
+											</ul>
+										</li>
+										<li><span class="tree_label file-icon">Level 2</span></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</ul>
+			</nav>
+			<!-- <button class="sidebar-minimizer brand-minimizer" type="button"></button> -->
+		</div>
+
+		<!-- Main content -->
+		<main class="main">
+			<div class="container-fluid">
+				<div class="animated fadeIn">
+					<div class="row">
+						<div class="col-md-12 pt-2 panel panel-default" style="background-color: #F4F3F4">
+							<a href="#" id="panel-fullscreen" title="Toggle fullscreen" style="position: absolute; top: 50px; right: 20px; color: #ddd"><i class="fas fa-expand-arrows-alt"></i></a>
+							<ul class="nav nav-tabs" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" data-toggle="tab" href="#file1" role="tab"><i class="fas fa-file-code"></i> editor.meta.name 1 &nbsp;&nbsp;<span>x</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#file2" role="tab"><i class="fas fa-file-code"></i> editor.meta.name 2 &nbsp;&nbsp;<span>x</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#file3" role="tab"><i class="fas fa-file-code"></i> editor.meta.name 3 &nbsp;&nbsp;<span>x</span></a>
+								</li>
+							</ul>
+
+							<div class="tab-content" style="height: 780px">
+								<div class="tab-pane active mt-5" id="file1" role="tabpanel">
+									<!-- editor window -->
+									<hr class="m-0">
+									<textarea id="codemirror">
+&lt;!DOCTYPE html&gt; 
+&lt;html lang="en"&gt; 
+&lt;head&gt;
+									</textarea>
+								</div>
+								<div class="tab-pane" id="file2" role="tabpanel">
+									<div>
+
+									</div>
+								</div>
+								<div class="tab-pane  show" id="file3" role="tabpanel">
+									<div>
+
+
+
+
+
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+		<!-- Right side bar -->
+
+		<!-- <div class="tab-pane active" id="timeline" role="tabpanel">
+          <div class="callout m-0 py-3 text-muted text-center bg-light text-uppercase">
+            <small><b>&nbsp;</b></small>
+          </div>
+          <hr class="transparent mx-3 my-0">
+          <div class="callout  m-0 py-3">Content</div>   
+          <hr class="mx-3 my-0">
+				<div class="callout callout-info m-0 py-3"><div>Data</div></div>   
+          <hr class="mx-3 my-0">
+				<div class="callout m-0 py-3"><div>View</div></div>   
+          <hr class="mx-3 my-0">
+				<div class="callout m-0 py-3"><div>History</div></div>   
+          <hr class="mx-3 my-0">
+        </div> -->
+
+		<!-- <div class="tabsidebar">
+				<div class="callout m-0 py-3 text-muted text-center bg-light text-uppercase">
+					<small><b>&nbsp;</b></small>
+				</div>
+				<hr class="transparent mx-3 my-0">
+				<button class="tablinks">
+					<div class="callout  m-0 py-3">Content</div>
+				</button>
+				<hr class="mx-3 my-0">
+				<button class="tablinks">
+					<div class="callout  callout-info m-0 py-3">Content</div>
+				</button>
+				<hr class="mx-3 my-0">
+				<button class="tablinks">
+					<div class="callout  m-0 py-3">Content</div>
+				</button>
+				<hr class="mx-3 my-0">
+			</div> -->
+
+
+		<aside class="aside-menu">
+			<div id="accordion" role="tablist">
+				<div class="callout m-0 py-3 text-muted text-center bg-light text-uppercase">
+					<small><b>&nbsp;</b></small>
+				</div>
+				<div class="card">
+
+					<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<div class="card-header" role="tab" id="headingOne">
+							<h6 class="mb-0">Content</h6>
+						</div>
+					</a>
+
+					<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+						<div class="card-body">
+							Blah
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+
+					<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<div class="card-header" role="tab" id="headingTwo">
+							<h6 class="mb-0">Data</h6>
+						</div>
+					</a>
+
+					<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+						<div class="card-body">
+							<button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+
+					<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<div class="card-header" role="tab" id="headingThree">
+							<h6 class="mb-0">View</h6>
+						</div>
+					</a>
+					<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+						<div class="card-body">
+							Blah
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabsidebar">
+				<div class="callout m-0 py-3 text-muted text-center bg-light text-uppercase">
+					<small><b>Option</b></small>
+				</div>
+				<hr class="transparent mx-3 my-0">
+				<button class="tablinks">
+					<div class="callout  m-0 py-3">Content</div>
+				</button>
+				<hr class="mx-3 my-0">
+				<button class="tablinks">
+					<div class="callout m-0 py-3">Data</div>
+				</button>
+				<hr class="mx-3 my-0">
+				<button class="tablinks">
+					<div class="callout  m-0 py-3">View</div>
+				</button>
+				<hr class="mx-3 my-0">
+			</div>
+		</aside>
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+	<!-- Bootstrap and necessary plugins -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- RADP  Javascript-->
+	<script src="js/radp.js"></script>
+
+	<!-- Code Editor -->
+	<script type="text/javascript" src="https://jsampang.github.io/radp/js/codemirror.min.js"></script>
+	<script type="text/javascript" src="https://jsampang.github.io/radp/js/xml.min.js"></script>
+	<script type="text/javascript" src="https://jsampang.github.io/radp/js/code-editor.js"></script>
+
+	<script>
+		$(".nav-tabs").on("click", "a", function (e) {
+				e.preventDefault();
+				if (!$(this).hasClass('add-contact')) {
+					$(this).tab('show');
+				}
+			})
+			.on("click", "span", function () {
+				var anchor = $(this).siblings('a');
+				$(anchor.attr('href')).remove();
+				$(this).parent().remove();
+				$(".nav-tabs li").children('a').first().click();
+			});
+
+		$('.add-contact').click(function (e) {
+			e.preventDefault();
+			var id = $(".nav-tabs").children().length; //think about it ;)
+			var tabId = 'contact_' + id;
+			$(this).closest('li').before('<li class="nav-item" ><a class="nav-link" href="#contact_' + id + '"> New Tab <span> x </span></a> </li>');
+			$('.tab-content').append('<div class="tab-pane" id="' + tabId + '">Contact Form: New Contact ' + id + '</div>');
+			$('.nav-tabs li:nth-child(' + id + ') a').click();
+		});
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+/* RADP Custom CSS */
+
+button:focus {
+	outline: 0 !important;
+}
+
+.button:focus {
+	outline: 0 !important;
+}
+
+.panel-actions {
+	margin-top: -20px;
+	margin-bottom: 0;
+	text-align: right;
+}
+
+.panel-actions a {
+	color: #333;
+}
+
+.panel-fullscreen {
+	display: block;
+	z-index: 9999;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	overflow: auto;
+}
+
+.radp-projects {
+	width: 200px;
+	text-align: center;
+	margin: 14px;
+	padding: 2px 13px 57px 0px;
+	color: #000;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.file-icon:before {
+	content: "\f016";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #1badf8;
+	font-size: 14px;
+	padding-right: 0.5em;
+	/*position: absolute;*/
+	top: -4px;
+	left: 16px;
+}
+
+.folder-icon:before {
+	content: "\f07b";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #1badf8;
+	font-size: 14px;
+	padding-right: 0.5em;
+	/*position: absolute;*/
+	top: -4px;
+	left: 16px;
+}
+
+.tabsidebar {
+	float: left;
+	background-color: #fff;
+	width: 100%;
+}
+
+.tabsidebar button {
+	display: block;
+	background-color: inherit;
+	color: black;
+	padding: 0px 0px 0px;
+	width: 100%;
+	border: none;
+	outline: none;
+	text-align: left;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 14px;
+}
+
+.tabsidebar button:hover {
+	background-color: #F4F3F4;
+}
+
+.tabsidebar button.active {
+	background-color: #fff;
+}
+
+.accordion,
+.card {
+	border-radius: 0px!important;
+	border-bottom-width: 0px!important;
+	margin-bottom: 1px;
+}
+
+.accordion a:link,
+.card a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.accordion:hover,
+.card-header:hover {
+	background-color: #F4F3F4!important;
+}
+
+.accordion,
+.card-header {
+	background-color: #ffffff!important;
+	padding: 1.25rem;
+	margin-bottom: 0;
+	background-color: #f0f2f7;
+	border-bottom: 1px solid #e4e6eb;
+	border-left: 2px solid #67c2ef;
+	border-left-width: .25rem;
+	border-left-color: #67c2ef;
+}
+
+.trigger {
+	cursor: pointer;
+	font-size: 0.9375rem!important;
+	line-height: 24px;
+}
+
+.trigger:active {
+	color: #1badf8!important;
+}
+
+.trigger:focus {
+	color: #1badf8!important;
+}
+
+.trigger:hover {
+	color: #1badf8!important;
+}
+
+.trigger:visited {
+	color: #1badf8!important;
+}
+
+.trigger:selected {
+	color: #1badf8!important;
+}
+
+.toggle-fullscreen {
+	position: absolute;
+	top: 50px;
+	right: 20px;
+	color: #ddd;
+}
+
+.content-link {
+	cursor: pointer;
+}
+
+.content-link.selected {
+	color: #1badf8;
+	font-weight: bolder;
+}
+
+
+/*task task-list */
+
+.task {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	background: #fff;
+	border: 1px solid #e4e6eb;
+}
+
+.task nav {
+	-ms-flex: 0 0 200px;
+	flex: 0 0 200px;
+	padding: 1rem;
+	border-right: 1px solid #e4e6eb;
+}
+
+.task nav .btn-block {
+	margin-bottom: 15px;
+}
+
+.task nav .nav {
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.task nav .nav .nav-item {
+	position: relative;
+}
+
+.task nav .nav .nav-item .nav-link,
+.task nav .nav .nav-item .navbar .dropdown-toggle,
+.navbar .task nav .nav .nav-item .dropdown-toggle {
+	color: #383e4b;
+	font-weight: 500;
+	/* border-bottom: 1px solid #e4e6eb; */
+}
+
+.task nav .nav .nav-item .nav-link:hover,
+.task nav .nav .nav-item .navbar .dropdown-toggle:hover,
+.navbar .task nav .nav .nav-item .dropdown-toggle:hover {
+	color: #36a9e1;
+	font-weight: 500;
+}
+
+.task nav .nav .nav-item .nav-link.active,
+.task nav .nav .nav-item .navbar .dropdown-toggle.active,
+.navbar .task nav .nav .nav-item .dropdown-toggle.active {
+	color: #000;
+	font-weight: 600;
+	border-left: 2px solid #67c2ef;
+}
+
+.task nav .nav .nav-item .nav-link i,
+.task nav .nav .nav-item .navbar .dropdown-toggle i,
+.navbar .task nav .nav .nav-item .dropdown-toggle i {
+	width: 20px;
+	margin: 0 10px 0 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+.task nav .nav .nav-item .nav-link .badge,
+.task nav .nav .nav-item .navbar .dropdown-toggle .badge,
+.navbar .task nav .nav .nav-item .dropdown-toggle .badge {
+	float: right;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+
+.task main {
+	min-width: 0;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 1rem;
+}
+
+.task .inbox .toolbar {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #e4e6eb;
+}
+
+.task .inbox .messages {
+	padding: 0;
+	list-style: none;
+}
+
+.task .inbox .task-list {
+	position: relative;
+	padding: 1rem 1rem 1rem 0.875rem;
+	cursor: pointer;
+	border-bottom: 1px solid #e4e6eb;
+}
+
+.task .inbox .task-list:hover {
+	background: #f0f2f7;
+}
+
+.task .inbox .task-list .actions {
+	position: absolute;
+	left: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.task .inbox .task-list .actions .action {
+	width: 2rem;
+	margin-bottom: 0.5rem;
+	color: #c7cbd5;
+	text-align: center;
+}
+
+.task .inbox .task-list a {
+	color: #000;
+}
+
+.task .inbox .task-list a:hover {
+	text-decoration: none;
+}
+
+.task .inbox .task-list.unread .header,
+.task .inbox .task-list.unread .title {
+	font-weight: bold;
+}
+
+.task .inbox .task-list .header {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	margin-bottom: 0.5rem;
+}
+
+.task .inbox .task-list .header .date {
+	margin-left: auto;
+	font-weight: 400;
+  font-size: 14px;
+}
+
+.task .inbox .task-list .title {
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.task .inbox .task-list .description {
+	font-size: 12px;
+}
+
+.task .task-list .toolbar {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #e4e6eb;
+}
+
+.task .task-list .details .title {
+	padding: 1rem 0;
+	font-weight: bold;
+}
+
+.task .task-list .details .header {
+	display: -ms-flexbox;
+	display: flex;
+	padding: 1rem 0;
+	margin: 1rem 0;
+	border-top: 1px solid #e4e6eb;
+	border-bottom: 1px solid #e4e6eb;
+}
+
+.task .task-list .details .header .avatar {
+	width: 40px;
+	height: 40px;
+	margin-right: 1rem;
+}
+
+.task .task-list .details .header .from {
+	font-size: 12px;
+	color: #9da0a8;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.task .task-list .details .header .from span {
+	display: block;
+	font-weight: bold;
+}
+
+.task .task-list .details .header .date {
+	margin-left: auto;
+}
+
+.task .task-list .details .attachments {
+	padding: 1rem 0;
+	margin-bottom: 1rem;
+	border-top: 3px solid #f0f2f7;
+	border-bottom: 3px solid #f0f2f7;
+}
+
+.task .task-list .details .attachments .attachment {
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0.5rem 0;
+	font-size: 12px;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.task .task-list .details .attachments .attachment .badge {
+	margin: 0 0.5rem;
+	line-height: inherit;
+}
+
+.task .task-list .details .attachments .attachment .menu {
+	margin-left: auto;
+}
+
+.task .task-list .details .attachments .attachment .menu a {
+	padding: 0 0.5rem;
+	font-size: 14px;
+	color: #e4e6eb;
+}
+
+@media (max-width: 767.98px) {
+	.task {
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.task nav {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.task .task-list .header {
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+	}
+	.task .task-list .header .date {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+	}
+}
+
+.fas {
+	color: #36a9e1;
+} 
+

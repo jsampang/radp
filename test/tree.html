@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Pure CSS Tree Menu</title>
+
+	<link rel="stylesheet" href="tree-style.css">
+
+</head>
+
+<body>
+
+	<ul class="tree">
+		<li>
+			<input type="checkbox" checked="checked" id="t1" />
+			<label class="tree_label" for="t1">Template</label>
+			<ul>
+				<li>
+					<input type="checkbox" id="t2" />
+					<label for="t2" class="tree_label">Folder 1</label>
+					<ul>
+						<li><span class="tree_label">File 1</span></li>
+						<li><span class="tree_label">File 2</span></li>
+					</ul>
+				</li>
+				<li>
+					<input type="checkbox" id="t3" />
+					<label for="t3" class="tree_label">Folder 2</label>
+					<ul>
+						<li>
+							<input type="checkbox" id="t4" />
+							<label for="t4" class="tree_label">Folder</label>
+							<ul>
+								<li><span class="tree_label">File Level 3</span></li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" id="t5" />
+							<label for="t5" class="tree_label">Folder</label>
+							<ul>
+								<li><span class="tree_label">File Level 3</span></li>
+							</ul>
+						</li>
+						<li><span class="tree_label">Level 2</span></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+</body>
+
+</html>

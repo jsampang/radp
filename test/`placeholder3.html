@@ -1,0 +1,268 @@
+<main class="main">
+	<div class="container-fluid">
+		<div class="animated fadeIn">
+			<div class="row">
+				<div class="col-md-12 mt-3">
+					<div class="card card-accent-primary panel panel-default">
+						<div class="card-body" style="min-height: 800px; height: auto;">
+							<ul class="nav nav-tabs" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" data-toggle="tab" href="#file1" role="tab"><i class="far fa-file-code"></i> {{ editor.meta.name 1 }} </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#file2" role="tab"><i class="far fa-file-code"></i> {{ editor.meta.name 2 }}</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#file3" role="tab"><i class="far fa-file-code"></i> {{ editor.meta.name 3 }}</a>
+								</li>
+							</ul>
+							<div class="tab-content" style="height: 780px">
+								<div class="tab-pane active" id="file1" role="tabpanel">
+									<% include('99b66767ecb84559c5f7a16f5679a8db') %>
+								</div>
+								<div class="tab-pane" id="file2" role="tabpanel">
+									<p>file 2</p>
+								</div>
+								<div class="tab-pane  show" id="file3" role="tabpanel">
+									<p>file 3</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+
+
+
+<main class="main">
+	<div class="container-fluid">
+		<div class="animated fadeIn">
+			<div class="row">
+				<div class="col-md-12 mt-3">
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#file1" role="tab"><i class="far fa-file-code"></i> {{ editor.meta.name 1 }} </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#file2" role="tab"><i class="far fa-file-code"></i> {{ editor.meta.name 2 }}</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#file3" role="tab"><i class="far fa-file-code"></i> {{ editor.meta.name 3 }}</a>
+						</li>
+					</ul>
+
+					<div class="tab-content" style="height: 780px">
+						<div class="tab-pane active" id="file1" role="tabpanel">
+							<% include('99b66767ecb84559c5f7a16f5679a8db') %>
+						</div>
+						<div class="tab-pane" id="file2" role="tabpanel">
+							<p>file 2</p>
+						</div>
+						<div class="tab-pane  show" id="file3" role="tabpanel">
+							<p>file 3</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+
+
+
+
+
+<!-- Tabbed -->
+<main class="main">
+	<div class="container-fluid">
+		<div class="animated fadeIn">
+			<div class="row">
+				<div class="col-md-12 mt-3">
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#file1" role="tab"><i class="far fa-file-code"></i> editor.meta.name 1 </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#file2" role="tab"><i class="far fa-file-code"></i> editor.meta.name 2 </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#file3" role="tab"><i class="far fa-file-code"></i> editor.meta.name 3 </a>
+						</li>
+					</ul>
+
+					<div class="tab-content" style="height: 780px">
+						<div class="tab-pane active" id="file1" role="tabpanel">
+							<!-- editor window -->
+							<% include('99b66767ecb84559c5f7a16f5679a8db') %>
+						</div>
+						<div class="tab-pane" id="file2" role="tabpanel">
+							<div>Tab 2</div>
+						</div>
+						<div class="tab-pane  show" id="file3" role="tabpanel">
+							<div>Tab 3</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+	
+	
+	
+	
+	
+	
+	<main class="main">
+	<div class="container-fluid">
+		<div class="animated fadeIn">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card card-accent-primary panel panel-default">
+						<div class="card-body" style="min-height: 800px; height: auto;">
+							<div class="row">
+								<div class="col-sm-5">
+									<h3 class="card-title clearfix mb-0">Editor</h3>
+								</div>
+								<div class="col-sm-7">
+									<button type="button" class="btn btn-primary float-right ml-3 form-group" id="panel-fullscreen" title="Toggle fullscreen"><i class="fas fa-expand-arrows-alt"></i></button>
+									<button type="button" class="btn btn-primary float-right ml-3 form-group"><i class="far fa-edit"></i> Edit</button>
+									<button type="button" class="btn btn-primary float-right ml-3 form-group"><i class="fas fa-eye"></i> View</button>
+								</div>
+							</div>
+							<hr class="m-0">
+
+							<!-- editor window -->
+							<% include('99b66767ecb84559c5f7a16f5679a8db') %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+		
+		
+		
+		
+		
+		
+		<div class="sidebar">
+	<nav class="sidebar-nav">
+		<ul class="nav">
+                <li class="divider"></li>
+                        <div class="radp-projects">
+			<% include('dfacf61f0152fd8c61f4c08aeaca1d0c') %>
+			<% include('309b39cf8c43d3230013513dfb2456f4') %>
+			<% include('f0d287a293d5388b9b48791e567abfd4') %>
+                        <% include('984c5a13b553668fa67192843d3301ee') %>
+<br><br>
+<img src='<% include('d9c06ea1b3f8881393d9def189820752') %>'>
+                        </div>
+		</ul>
+
+	</nav>
+	<!-- <button class="sidebar-minimizer brand-minimizer" type="button"></button> -->
+</div>
+													
+													
+													
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="nav nav-tabs tabs-right" role="tablist">
+				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+				<li role="presentation"><a href="#task-lists" aria-controls="task-lists" role="tab" data-toggle="tab">task-lists</a></li>
+				<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-9">
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="home">home tab</div>
+				<div role="tabpanel" class="tab-pane" id="profile">profile tab</div>
+				<div role="tabpanel" class="tab-pane" id="task-lists">task-lists tab</div>
+				<div role="tabpanel" class="tab-pane" id="settings">setting tabs</div>
+			</div>
+		</div>
+	</div>
+</div>	
+													
+													
+													
+													
+<table class="table table-responsive-sm">
+	<thead>
+		<tr>
+			<th>Data</th>
+			<th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Data 1</td>
+			<td>
+				<span class="badge badge-success">Active</span>
+			</td>
+		</tr>
+		<tr>
+			<td>Data 2</td>
+			<td>
+				<span class="badge badge-danger">Banned</span>
+			</td>
+		</tr>
+		<tr>
+			<td>Data 3</td>
+			<td>
+				<span class="badge badge-secondary">Inactive</span>
+			</td>
+		</tr>
+		<tr>
+			<td>Data 3</td>
+			<td>
+				<span class="badge badge-warning">Pending</span>
+			</td>
+		</tr>
+		<tr>
+			<td>Friderik Dávid</td>
+			<td>
+				<span class="badge badge-success">Active</span>
+			</td>
+		</tr>
+	</tbody>
+</table>												
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
