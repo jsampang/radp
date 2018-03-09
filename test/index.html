@@ -11,8 +11,8 @@
 	<title>Rowboat Software</title>
 
 	<!-- RADP style -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="../css/radp-style.css">
+	<link rel="stylesheet" href="../css/radp-custom-style.css">
 	<link rel="stylesheet" href="tree-style.css">
 	<!-- code editor style -->
 	<link href="https://jsampang.github.io/radp/css/codemirror.min.css" rel="stylesheet">
@@ -63,6 +63,14 @@
 				<ul class="nav">
 
 					<li class="divider"></li>
+					<div style="margin: 20px 20px 0px 20px;">
+						<select class="form-control">
+							<option disabled="disabled" value="">Select Project</option>
+							<option value="cc3417ab216bdcf13696fe0fdd5a87a9">admin.rowboatsoftware.com</option>
+							<option value="46083a0296db4818f8d8622b8dcb2e3d">cfc.rowboatsoftware.com</option>
+							<option value="e41d2f6a13dc24112adb68ba464cb994">demo.xyzcorp.xyz</option>
+						</select>
+					</div>
 					<ul class="tree">
 						<li>
 							<input type="checkbox" checked="checked" id="t1" />
@@ -100,6 +108,9 @@
 							</ul>
 						</li>
 					</ul>
+
+
+
 				</ul>
 			</nav>
 			<!-- <button class="sidebar-minimizer brand-minimizer" type="button"></button> -->
@@ -129,9 +140,7 @@
 									<!-- editor window -->
 									<hr class="m-0">
 									<textarea id="codemirror">
-&lt;!DOCTYPE html&gt; 
-&lt;html lang="en"&gt; 
-&lt;head&gt;
+										&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt; &lt;head&gt;
 									</textarea>
 								</div>
 								<div class="tab-pane" id="file2" role="tabpanel">

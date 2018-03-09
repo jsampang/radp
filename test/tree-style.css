@@ -20,9 +20,12 @@ ul {
 */
 
 .tree {
-	margin: 1em;
 	color: #000;
-	margin: 2em 1em 1em 3em;
+	margin: 19px;
+	border: 1px solid #ddd;
+	padding: 20px 0px 41px 22px;
+	border-radius: 3px;
+	height: auto;
 }
 
 .tree input {
@@ -83,10 +86,10 @@ label.tree_label:hover {
 
 label.tree_label:before {
 	content: "\f07b";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
 	color: #1badf8;
 	position: relative;
 	z-index: 1;
