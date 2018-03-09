@@ -21,11 +21,9 @@ ul {
 
 .tree {
 	color: #000;
-	margin: 19px;
-	border: 1px solid #ddd;
-	padding: 20px 0px 41px 22px;
-	border-radius: 3px;
-	height: auto;
+	padding: 8px 0px 11px 11px;
+	font-weight: 500;
+
 }
 
 .tree input {
