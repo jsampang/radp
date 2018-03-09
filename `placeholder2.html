@@ -1,56 +1,54 @@
-<div class="sidebar">
-	<nav class="sidebar-nav">
-		<ul class="nav">
-			<li class="divider"></li>
-			<div class="radp-projects">
-				Rowboat #1 <img src="<# url('f229c867c7f173a9101770d5ecca4718') #>">
-				<% include('dfacf61f0152fd8c61f4c08aeaca1d0c') %>
-				<% include('309b39cf8c43d3230013513dfb2456f4') %>
-				<% include('f0d287a293d5388b9b48791e567abfd4') %>
-				<% include('984c5a13b553668fa67192843d3301ee') %>
-			</div>
-			<li class="divider"></li>
-
-<ul class="tree">
-	<li>
-		<input type="checkbox" checked="checked" id="t1" />
-		<label class="tree_label" for="t1">Template</label>
-		<ul>
-			<li>
-				<input type="checkbox" checked="checked" id="t2" />
-				<label for="t2" class="tree_label">Folder 1</label>
-				<ul>
-					<li><span class="tree_label file-icon">File 1</span></li>
-					<li><span class="tree_label file-icon">File 2</span></li>
-				</ul>
-			</li>
-			<li>
-				<input type="checkbox" checked="checked" id="t3" />
-				<label for="t3" class="tree_label">Folder 2</label>
-				<ul>
-					<li>
-						<input type="checkbox" id="t4" />
-						<label for="t4" class="tree_label">Folder 2.1</label>
-						<ul>
-							<li><span class="tree_label file-icon">File Level 3 </span></li>
-						</ul>
-					</li>
-					<li>
-						<input type="checkbox" id="t5" />
-						<label for="t5" class="tree_label">Folder 2.2</label>
-						<ul>
-							<li><span class="tree_label file-icon">File Level 3</span></li>
-						</ul>
-					</li>
-					<li><span class="tree_label file-icon">Level 2</span></li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-</ul>
-
-
-
-		</ul>
-	</nav>
+<span style="height:1px; border:none; color: #ccc; background-color: #ccc;">
+<span style="position: relative; top: -10px; left: 63px; background-color: #fff; padding: 10px; color: #333">Navigation</span>
+</span>
+<li class="divider"></li>
+<div class="left-nav-box">
+	<ul class="tree">
+		<li>
+			<input type="checkbox" checked="checked" id="t1" />
+			<label class="tree_label" for="t1">Template</label>
+			<ul>
+				<li>
+					<input type="checkbox" checked="checked" id="t2" />
+					<label for="t2" class="tree_label">Folder 1</label>
+					<ul>
+						<li><a href="#" class="content-link"><span class="tree_label file-icon">File 1</span></a></li>
+						<li><a href="#" class="content-link"><span class="tree_label file-icon">File 2</span></a></li>
+						<li><a href="#" class="content-link"><span class="tree_label file-icon">File 3</span></a></li>
+						<li><a href="#" class="content-link"><span class="tree_label file-icon">File 4</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<input type="checkbox" checked="checked" id="t3" />
+					<label for="t3" class="tree_label">Folder 2</label>
+					<ul>
+						<li>
+							<input type="checkbox" id="t4" />
+							<label for="t4" class="tree_label">Folder 2.1</label>
+							<ul>
+								<li><a href="#" class="content-link"><span class="tree_label file-icon">Level 3 </span></a></li>
+								<li><a href="#" class="content-link"><span class="tree_label file-icon">Level 3 </span></a></li>
+								<li><a href="#" class="content-link"><span class="tree_label file-icon">Level 3 </span></a></li>
+								<li><a href="#" class="content-link"><span class="tree_label file-icon">Level 3 </span></a></li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" id="t5" />
+							<label for="t5" class="tree_label">Folder 2.2</label>
+							<ul>
+								<li><a href="#" class="content-link"><span class="tree_label file-icon">Level 3</span></a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="content-link"><span class="tree_label file-icon">Level 2</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class="left-nav-box text-center mb-5">
+	<div class="form-actions">
+		<button type="button" class="btn btn-sm btn-outline-primary">Add Folder</button>
+		<button type="button" class="btn btn-sm btn-outline-primary">Add File</button>
+	</div>
 </div>

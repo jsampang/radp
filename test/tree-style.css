@@ -71,6 +71,7 @@ ul {
 
 label.tree_label {
 	cursor: pointer;
+	    margin: 1px;
 }
 
 label.tree_label:hover {
