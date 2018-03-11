@@ -17,10 +17,6 @@
 	<!-- code editor style -->
 	<link href="https://jsampang.github.io/radp/css/codemirror.min.css" rel="stylesheet">
 
-
-
-
-
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-off-canvas">
@@ -273,7 +269,7 @@
 
 
 		<aside class="aside-menu">
-			<div id="accordion" role="tablist">
+			<!-- <div id="accordion" role="tablist">
 				<div class="callout m-0 py-3 text-muted text-center bg-light text-uppercase">
 					<small><b>Option 1</b></small>
 				</div>
@@ -437,23 +433,51 @@
 					</div>
 				</div>
 
-				<!-- <div class="card">
-			<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				<div class="card-header" role="tab" id="headingThree">
-					<h6 class="mb-0">View</h6>
+				<div class="card">
+					<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<div class="card-header" role="tab" id="headingThree">
+							<h6 class="mb-0">View</h6>
+						</div>
+					</a>
+					<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+						<div class="card-body text-center">
+							<button type="button" class="btn btn-primary btn-sm">View this page</button>&nbsp;&nbsp;
+							<button type="button" class="btn btn-primary btn-sm">Open All</button>
+						</div>
+					</div>
 				</div>
-			</a>
-			<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-				<div class="card-body text-center">
-					<button type="button" class="btn btn-primary btn-sm">View this page</button>&nbsp;&nbsp;
-					<button type="button" class="btn btn-primary btn-sm">Open All</button>
+
+			</div> -->
+
+			<div class="right-tablinks">
+				<div class="text-center text-muted text-center text-uppercase" style="padding: 20px 20px 13px 14px; border-bottom: 1px solid #e4e6eb; background-color: #f5f5f5; "> <small><b>Option 1</b></small>
 				</div>
-			</div>
-		</div> -->
+
+				<div>
+		
+						<button class="tablinks link" >
+							<div class="m-0 py-3"> <i class="far fa-file-code text-primary"></i>&nbsp;&nbsp;Content</div>
+						</button>
+
+
+					<button class="tablinks active">
+						<div class="m-0 py-3"><i class="fas fa-database text-primary"></i>&nbsp;&nbsp;Data</div>
+					</button>
+					
+					<button class="tablinks link">
+						<div class="m-0 py-3"><i class="fas fa-eye text-primary"></i>&nbsp;&nbsp;View</div>
+					</button>
+
+					<button class="tablinks link">
+						<div class="m-0 py-3"><i class="far fa-plus-square text-primary"></i>&nbsp;&nbsp;Add</div>
+					</button>
+				</div>
+				
+				<div style="background-color: #f5f5f5; height: 900px; border-left: 1px solid #e4e6eb;"></div>
 
 			</div>
 
-			<div class="tabsidebar">
+			<!-- <div class="tabsidebar">
 				<div class="callout m-0 py-3 text-muted text-center bg-light text-uppercase">
 					<small><b>Option 2</b></small>
 				</div>
@@ -470,7 +494,10 @@
 					<div class="callout  m-0 py-3"><i class="fas fa-plus text-primary"></i> Add</div>
 				</button>
 				<hr class="mx-3 my-0">
-			</div>
+			</div> -->
+
+
+
 		</aside>
 
 

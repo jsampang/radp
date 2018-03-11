@@ -199,3 +199,5 @@ $('.content-link').on('click', function () {
 	$('.content-link').removeClass('selected');
 	$(this).addClass('selected');
 });
+
+
