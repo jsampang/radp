@@ -172,6 +172,8 @@ $(document).ready(function () {
 	});
 });
 
+/* tabs 
+
 		$(".nav-tabs").on("click", "a", function (e) {
         e.preventDefault();
         if (!$(this).hasClass('add-contact')) {
@@ -200,3 +202,5 @@ $('.content-link').on('click', function () {
 	$(this).addClass('selected');
 });
 
+
+*/

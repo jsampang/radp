@@ -15,7 +15,9 @@
 	<link rel="stylesheet" href="../css/radp-custom-style.css">
 	<link rel="stylesheet" href="tree-style.css">
 	<!-- code editor style -->
-	<link href="https://jsampang.github.io/radp/css/codemirror.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://jsampang.github.io/radp/css/codemirror.min.css" >
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css" >
 
 </head>
 
@@ -202,12 +204,14 @@
 									<!-- editor window -->
 									<hr class="m-0">
 									<textarea id="codemirror">
-										&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt; &lt;head&gt;
+&lt;!DOCTYPE html&gt; 
+&lt;html lang="en"&gt; 
+&lt;head&gt;
 									</textarea>
 								</div>
 								<div class="tab-pane" id="file2" role="tabpanel">
 									<div>
-
+<button type="button" class="btn btn-primary" id="showtoast">Show Toast</button>
 									</div>
 								</div>
 								<div class="tab-pane  show" id="file3" role="tabpanel">
@@ -524,6 +528,8 @@
 	<script type="text/javascript" src="https://jsampang.github.io/radp/js/codemirror.min.js"></script>
 	<script type="text/javascript" src="https://jsampang.github.io/radp/js/xml.min.js"></script>
 	<script type="text/javascript" src="https://jsampang.github.io/radp/js/code-editor.js"></script>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
 	<script>
 		$(".nav-tabs").on("click", "a", function (e) {
@@ -547,6 +553,27 @@
 			$('.tab-content').append('<div class="tab-pane" id="' + tabId + '">Contact Form: New Contact ' + id + '</div>');
 			$('.nav-tabs li:nth-child(' + id + ') a').click();
 		});
+		
+		
+		Command: toastr["success"]("Your file is save", "Succes")
+
+toastr.options = {
+  "closeButton": true,
+  "debug": true,
+  "newestOnTop": false,
+  "progressBar": true,
+  "positionClass": "toast-top-right",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "5000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}
 	</script>
 
 </body>
