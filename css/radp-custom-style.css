@@ -204,6 +204,10 @@ ul {
 	
 }
 
+.right-tablinks button:active {
+    background-color: #fff;
+	
+}
 .right-tablinks button  {
     display: block;
     color: black;
