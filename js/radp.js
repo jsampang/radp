@@ -172,6 +172,23 @@ $(document).ready(function () {
 	});
 });
 
+		$(function () {
+			$('#error').click(function () {
+				// make it not dissappear
+				toastr.error("Error", "Page Title Here", {});
+			});
+			$('#info').click(function () {
+				// title is optional
+				toastr.info("Info Message", "Title");
+			});
+			$('#warning').click(function () {
+				toastr.warning("Warning");
+			});
+			$('#success').click(function () {
+				toastr.success("Success");
+			});
+		});
+
 /* tabs 
 
 		$(".nav-tabs").on("click", "a", function (e) {
