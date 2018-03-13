@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+
+	<link rel="stylesheet" href="toastr.css">
+
+
+
+
+</head>
+
+<body>
+	<input type="button" value="Error" id="error" />
+	<input type="button" value="Info" id="info" />
+	<input type="button" value="Warning" id="warning" />
+	<input type="button" value="Success" id="success" />
+
+
+
+
+
+
+
+
+
+
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+
+	<script src="toast-jquery.js"></script>
+	<script src="toastr.js"></script>
+
+
+	<script>
+		$(function () {
+			$('#error').click(function () {
+				// make it not dissappear
+				toastr.error("Error", "Page Title Here", {});
+			});
+			$('#info').click(function () {
+				// title is optional
+				toastr.info("Info Message", "Title");
+			});
+			$('#warning').click(function () {
+				toastr.warning("Warning");
+			});
+			$('#success').click(function () {
+				toastr.success("Success");
+			});
+		});
+	</script>
+</body>
+
+</html>
