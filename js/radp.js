@@ -172,19 +172,76 @@ $(document).ready(function () {
 	});
 });
 
-$(function () {
-	$('#error').click(function () {
-		// make it not dissappear
-		toastr.error("Error", "Page Title Here", {});
-	});
-	$('#info').click(function () {
-		// title is optional
-		toastr.info("Info Message", "Title");
-	});
-	$('#warning').click(function () {
-		toastr.warning("Warning");
-	});
-	$('#success').click(function () {
-		toastr.success("Success");
-	});
+		$(function () {
+			$('#error').click(function () {
+				// make it not dissappear
+				toastr.error("Error", "Page Title Here", {});
+			});
+			$('#info').click(function () {
+				// title is optional
+				toastr.info("Info Message", "Title");
+			});
+			$('#warning').click(function () {
+				toastr.warning("Warning");
+			});
+			$('#success').click(function () {
+				toastr.success("Success");
+			});
+		});
+
+/* tabs 
+
+		$(".nav-tabs").on("click", "a", function (e) {
+        e.preventDefault();
+        if (!$(this).hasClass('add-contact')) {
+            $(this).tab('show');
+        }
+    })
+    .on("click", "span", function () {
+        var anchor = $(this).siblings('a');
+        $(anchor.attr('href')).remove();
+        $(this).parent().remove();
+        $(".nav-tabs li").children('a').first().click();
+    });
+
+$('.add-contact').click(function (e) {
+    e.preventDefault();
+    var id = $(".nav-tabs").children().length; //think about it ;)
+    var tabId = 'contact_' + id;
+    $(this).closest('li').before('<li class="nav-item" ><a class="nav-link" href="#contact_' + id + '"> New Tab <span> x </span></a> </li>');
+    $('.tab-content').append('<div class="tab-pane" id="' + tabId + '">Contact Form: New Contact ' + id + '</div>');
+   $('.nav-tabs li:nth-child(' + id + ') a').click();
 });
+
+
+$('.content-link').on('click', function () {
+	$('.content-link').removeClass('selected');
+	$(this).addClass('selected');
+});
+
+
+*/
+
+
+$("#alert-target").click(function () {
+    toastr["info"]("I was launched via jQuery!")
+});
+
+toastr.options = {
+  "closeButton": false,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": false,
+  "positionClass": "toast-top-right",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": 300,
+  "hideDuration": 1000,
+  "timeOut": 5000,
+  "extendedTimeOut": 1000,
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}                    
+   
