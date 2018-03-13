@@ -1,377 +1,44 @@
+
+<# ace.css #>
+<# <link rel="stylesheet" type="text/css" href="<% url('38faa28d7f4bb00776b4b359e2429420') %>"> #>
+
+<# ace-editor #>
+<% include('9bfc9331a774ac7fd00e0b8d0ec3a0df') %>
+
+<# open-file #>
+<% include('4e46fa1a2b5b17f51540a1a3a09b0049') %>
+
+<# editor-container #>
+<% include('e51039fcde922cd367b5b227e35ff020') %>
+
 <div class="row">
-	<div class="col-lg-12 col-xl-6">
-
-
-
-
-
-		<div class="sub-title">Left Tab</div>
-
-		<ul class="nav nav-tabs md-tabs tabs-left b-none" role="tablist">
-			<li class="nav-item">
-				<a class="nav-link active" data-toggle="tab" href="#home5" role="tab">Home</a>
-				<div class="slide"></div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#profile5" role="tab">Profile</a>
-				<div class="slide"></div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#messages5" role="tab">Messages</a>
-				<div class="slide"></div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#settings5" role="tab">Settings</a>
-				<div class="slide"></div>
-			</li>
-		</ul>
-
-		<div class="tab-content tabs-left-content card-block">
-			<div class="tab-pane active" id="home5" role="tabpanel">
-				<p class="m-0">1. This is Photoshop's version of Lorem IpThis is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean mas Cum sociis natoque penatibus et magnis dis.....</p>
-			</div>
-			<div class="tab-pane" id="profile5" role="tabpanel">
-				<p class="m-0">2.Cras consequat in enim ut efficitur. Nulla posuere elit quis auctor interdum praesent sit amet nulla vel enim amet. Donec convallis tellus neque, et imperdiet felis amet.</p>
-			</div>
-			<div class="tab-pane" id="messages5" role="tabpanel">
-				<p class="m-0">3. This is Photoshop's version of Lorem IpThis is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean mas Cum sociis natoque penatibus et magnis dis.....</p>
-			</div>
-			<div class="tab-pane" id="settings5" role="tabpanel">
-				<p class="m-0">4.Cras consequat in enim ut efficitur. Nulla posuere elit quis auctor interdum praesent sit amet nulla vel enim amet. Donec convallis tellus neque, et imperdiet felis amet.</p>
-			</div>
-		</div>
-
-
-
-
-
+	<div class="col-md-12 pt-2 panel panel-default" style="background-color: #F4F3F4">
+		<a href="#" id="panel-fullscreen" title="Toggle fullscreen" class="toggle-fullscreen"><i class="fas fa-expand-arrows-alt"></i></a>
+		<# open-file-collection #>
+			<% include('5d446f01cfb0ad7e51061e104fd2c9ca') %>
 	</div>
 </div>
+		
+		
+		
+<# editor.js #>
+<script src="<% url('a40e1813c679a5a526bcf5c591febfb0') %>" type="text/javascript" charset="utf-8"></script>
+<# ace.js #>
+<script src="<% url('67b29713f73f7f47aee5b39899564069') %>" type="text/javascript" charset="utf-8"></script>
+	
+	
+	
+	<i class="fas fa-asterisk text-primary" style="font-size: 8px;"></i>
 
 
+                <li class="nav-item" @click="closeFile(item.fileId)">x</li>
 
-<ul class="pcoded-item pcoded-left-item">
-	<li class="pcoded-hasmenu pcoded-trigger">
-		<a href="javascript:void(0)">
-			<span class="pcoded-micon"><i class="fa21 fas fa-file"></i></span>
-			<span class="pcoded-mtext">Pages</span>
-			<span class="pcoded-mcaret"></span>
-		</a>
-		<ul class="pcoded-submenu" style="padding: 15px 18px 20px;">
-			<div class="m-b-20 ">
-				<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> New File</button>
-				<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> Add folder</button>
-			</div>
-			<ul style="line-height:30px">
-				<li>
-					<i class="fas fa-folder-open"></i> Pages
-					<ul class="m-l-20">
-						<li><i class="fas fa-folder-open"></i> folder</li>
-						<ul class="m-l-20">
-							<li><i class="far fa-file"></i> file 01</li>
-							<li><i class="far fa-file"></i> file 02</li>
-						</ul>
-
-					</ul>
-				</li>
-			</ul>
-		</ul>
-	</li>
-	<li>
-		<a href="">
-			<span class="pcoded-micon"><i class="fa21 fas fa-file-code"></i></span>
-			<span class="pcoded-mtext">Templates</span>
-			<span class="pcoded-mcaret"></span>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<span class="pcoded-micon"><i class="fa21 fas fa-th-large"></i></span>
-			<span class="pcoded-mtext">Blocks</span>
-			<span class="pcoded-mcaret"></span>
-		</a>
-	</li>
-	<li>
-		<a href="">
-			<span class="pcoded-micon"><i class="fa21 fas fa-images"></i></span>
-			<span class="pcoded-mtext">Assets</span>
-			<span class="pcoded-mcaret"></span>
-		</a>
-	</li>
-</ul>
-
-
-
-<!-- new -->
-
-
-
-<nav class="pcoded-navbar">
-	<div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
-	<div class="pcoded-inner-navbar main-menu">
-
-		<ul class="pcoded-item pcoded-left-item">
-			<li class="pcoded-hasmenu pcoded-trigger">
-				<a href="javascript:void(0)">
-					<span class="pcoded-micon"><i class="fa21 fas fa-file"></i></span>
-					<span class="pcoded-mtext">Pages</span>
-					<span class="pcoded-mcaret"></span>
-				</a>
-				<ul class="pcoded-submenu sub-menu-files">
-					<div class="m-b-20 ">
-						<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> New File</button>
-						<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> Add folder</button>
-					</div>
-					<ul style="line-height:30px">
-						<li>
-							<i class="fas fa-folder-open"></i> Pages
-							<ul class="m-l-20">
-								<li><i class="fas fa-folder-open"></i> folder</li>
-								<ul class="m-l-20">
-									<li><i class="far fa-file"></i> file 01</li>
-									<li><i class="far fa-file"></i> file 02</li>
-								</ul>
-
-							</ul>
-						</li>
-					</ul>
-				</ul>
-			</li>
-			<li class="pcoded-hasmenu ">
-				<a href="javascript:void(0)">
-					<span class="pcoded-micon"><i class="fa21 fas fa-file-code"></i></span>
-					<span class="pcoded-mtext">Templates</span>
-					<span class="pcoded-mcaret"></span>
-				</a>
-				<ul class="pcoded-submenu sub-menu-files">
-					<div class="m-b-20 ">
-						<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> New File</button>
-						<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> Add folder</button>
-					</div>
-					<ul style="line-height:30px">
-						<li>
-							<i class="fas fa-folder-open"></i> Templates
-							<ul class="m-l-20">
-								<li><i class="fas fa-folder-open"></i> folder</li>
-								<ul class="m-l-20">
-									<li><i class="far fa-file"></i> file 01</li>
-									<li><i class="far fa-file"></i> file 02</li>
-								</ul>
-
-							</ul>
-						</li>
-					</ul>
-				</ul>
-			</li>
-			<li class="pcoded-hasmenu ">
-				<a href="javascript:void(0)">
-					<span class="pcoded-micon"><i class="fa21 fas fa-th-large"></i></span>
-					<span class="pcoded-mtext">Blocks</span>
-					<span class="pcoded-mcaret"></span>
-				</a>
-				<ul class="pcoded-submenu sub-menu-files">
-					<div class="m-b-20 ">
-						<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> New File</button>
-						<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> Add folder</button>
-					</div>
-					<ul style="line-height:30px">
-						<li>
-							<i class="fas fa-folder-open"></i> Blocks
-							<ul class="m-l-20">
-								<li><i class="fas fa-folder-open"></i> folder</li>
-								<ul class="m-l-20">
-									<li><i class="far fa-file"></i> file 01</li>
-									<li><i class="far fa-file"></i> file 02</li>
-								</ul>
-
-							</ul>
-						</li>
-					</ul>
-				</ul>
-			</li>
-			<li class="pcoded-hasmenu ">
-				<a href="javascript:void(0)">
-					<span class="pcoded-micon"><i class="fa21 fas fa-images"></i></span>
-					<span class="pcoded-mtext">Assets</span>
-					<span class="pcoded-mcaret"></span>
-				</a>
-				<ul class="pcoded-submenu" style="padding: 15px 18px 20px;">
-					<div class="m-b-20 ">
-						<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> New File</button>
-						<button class="btn btn-sm btn-primary btn-outline-primary"><i class="fas fa-plus"></i> Add folder</button>
-					</div>
-					<ul style="line-height:30px">
-						<li>
-							<i class="fas fa-folder-open"></i> Assets
-							<ul class="m-l-20">
-								<li><i class="fas fa-folder-open"></i> folder</li>
-								<ul class="m-l-20">
-									<li><i class="far fa-file"></i> file 01</li>
-									<li><i class="far fa-file"></i> file 02</li>
-								</ul>
-
-							</ul>
-						</li>
-					</ul>
-				</ul>
-			</li>
-		</ul>
-	</div>
-</nav>
+<span v-if="item.dirty"><i class="fas fa-times" @click="closeFile(item.fileId)">X</i></span>
 
 
 
 
-
-
-
-
-
-<i class="fa fa-wrench fa23" aria-hidden="true"></i>
-<a href="/seo-task-manager">SEO Task Manager</a>
-
-
-@section('script')
-<style>
-.bullet-info li .fa23 {
-    vertical-align: middle;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    color: #fff;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    border-radius: 100px;
-    border: 1px solid rgba(37,176,206,.01);
-    padding: 2px;
-    background-color: rgba(37,176,206,.58);
-}
-</style>
-@endsection
-
-
-style="width: 200px; text-align: center; margin:20px"
-
-
-
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
-</body>
-</html>
-
-
-
-<% extends '94041a13b4adde65c4e80cd7590447ed' %>
-	<% block content %>
-		<$ super() $>
-			<div class="page-body">
-				<div>
-					<div>
-						<div class="card default-border">
-							<div class="card-header">
-								<p class="custom-breadcrumbs f-18">Pages / Folder / file01 </p>
-
-
-								<div class="f-right">
-									<button id="edit-info-btn" type="button" class="btn btn-primary">
-										<i class="far fa-edit"></i> Edit
-									</button>
-									<button id="edit-info-btn" type="button" class="btn btn-primary">
-										<i class="fas fa-eye"></i> View
-									</button>
-								</div>
-							</div>
-							<div class="card-block">
-
-								<div class="row m-b-30">
-									<div class="col-lg-12 col-xl-12">
-										<ul class="nav nav-tabs md-tabs" role="tablist">
-											<li class="nav-item">
-												<a class="nav-link active" data-toggle="tab" href="#content" role="tab">Content</a>
-												<div class="slide"></div>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" data-toggle="tab" href="#data" role="tab">Data</a>
-												<div class="slide"></div>
-											</li>
-										</ul>
-
-										<div class="tab-content card-block">
-											<div class="tab-pane active" id="content" role="tabpanel">
-												<div class="code-editor">
-													<textarea rows="25" cols="5" class="form-control" id="codemirror"></textarea>
-												</div>
-												<div class="m-20">
-													<button type="submit" class="btn btn-primary m-t-30">Save</button>
-												</div>
-											</div>
-											<div class="tab-pane" id="data" role="tabpanel">
-												<div class="code-editor">
-													<textarea rows="25" cols="5" class="form-control" placeholder="data..."></textarea>
-												</div>
-												<div class="m-20">
-													<button type="submit" class="btn btn-primary m-t-30">Save</button>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-
-
-
-							</div>
-						</div>
-					</div>
-
-					<% include('ce84403cb08b66b013d71c5cc2b3fc53') %>
-
-				</div>
-			</div>
-			<% endblock %>
-				
-				
-				
-<style>
-.icon-folder {
-    position: relative;
-}
-
-.icon-folder:before {
-    content: "\f000";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-
-    color: #000;
-    font-size: 18px;
-    padding-right: 0.5em;
-    position: absolute;
-    top: 10px;
-    left: 0;
-}
-</style>
-				
-				
-				class="icon-folder"
-				
-				
-				38faa28d7f4bb00776b4b359e2429420
-				
-				
-.ace_editor {
-    border: 1px solid lightgray;
-    margin: 0px 21px 0px 0px;
-    height: 800px;
-    width: auto;
-}
+<% include('dfacf61f0152fd8c61f4c08aeaca1d0c') %>
+			    <% include('309b39cf8c43d3230013513dfb2456f4') %>
+			    <% include('f0d287a293d5388b9b48791e567abfd4') %>
+                <% include('984c5a13b553668fa67192843d3301ee') %>

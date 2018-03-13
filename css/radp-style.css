@@ -12181,7 +12181,7 @@ body {
 
 .aside-menu {
 	z-index: 1019;
-	width: 250px;
+	width: 183px;
 	color: #383e4b;
 	background: #fff;
 	/* border-left: 1px solid #e4e6eb; */
@@ -18045,7 +18045,7 @@ app-root {
 
 .aside-menu-fixed .main,
 .aside-menu-fixed .app-footer {
-	margin-right: 241px;
+	margin-right: 174px;
 }
 
 .aside-menu-fixed.aside-menu-hidden .main,
