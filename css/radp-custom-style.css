@@ -100,6 +100,25 @@ ul {
 	left: 16px;
 }
 
+.content-icon:before {
+	content: "\f15b";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #1badf8;
+	font-size: 14px;
+	padding-right: 0.5em;
+	/*position: absolute;*/
+	top: -4px;
+	left: 16px;
+}
+
+
+
+
+
+
 .tabsidebar {
 	float: left;
 	background-color: #fff;
