@@ -1,44 +1,154 @@
+<main class="main">
+	<div class="container-fluid">
+		<div class="animated fadeIn">
+			<div class="row">
+				<div class="col-md-12 pt-2 panel panel-default" style="background-color: #F4F3F4">
+					<a href="#" id="panel-fullscreen" title="Toggle fullscreen" class="toggle-fullscreen"><i class="fas fa-expand-arrows-alt"></i></a>
+					<ul class="nav nav-tabs" role="tablist">
 
-<# ace.css #>
-<# <link rel="stylesheet" type="text/css" href="<% url('38faa28d7f4bb00776b4b359e2429420') %>"> #>
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#file1" role="tab"><i class="fas fa-file-code"></i> File Editor &nbsp;&nbsp; 
+								<small><i class="fas fa-asterisk text-primary" style="font-size: 8px;"></i></small>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#file2" role="tab">
+								<i class="fas fa-file-code"></i> To Do List &nbsp;&nbsp;<span><i class="fas fa-times"></i></span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#file3" role="tab">
+								<i class="fas fa-file-code"></i> HTML Basic Components &nbsp;&nbsp;<span><i class="fas fa-times"></i></span>
+							</a>
+						</li>
+					</ul>
 
-<# ace-editor #>
-<% include('9bfc9331a774ac7fd00e0b8d0ec3a0df') %>
+					<div class="tab-content">
+						<div class="tab-pane active" id="file1" role="tabpanel">
 
-<# open-file #>
-<% include('4e46fa1a2b5b17f51540a1a3a09b0049') %>
+							<# editor window #>
+								<% include('99b66767ecb84559c5f7a16f5679a8db') %>
 
-<# editor-container #>
-<% include('e51039fcde922cd367b5b227e35ff020') %>
+						</div>
+						<div class="tab-pane" id="file2" role="tabpanel">
 
-<div class="row">
-	<div class="col-md-12 pt-2 panel panel-default" style="background-color: #F4F3F4">
-		<a href="#" id="panel-fullscreen" title="Toggle fullscreen" class="toggle-fullscreen"><i class="fas fa-expand-arrows-alt"></i></a>
-		<# open-file-collection #>
-			<% include('5d446f01cfb0ad7e51061e104fd2c9ca') %>
+							<# tab 2 content #>
+								<div class="m-3">
+									<div class="alert alert-secondary">
+										<ol style="padding:0px"><b>Things to do!</b>
+											<li><strike>Editable CSS </strike></li>
+											<li>Files and folders renaming and deleting</li>
+											<li>Tree structure going back to parent folder </li>
+											<li><strike>Click file - going to new tab</strike></li>
+											<li>Add a 404 page</li>
+											<li><strike>Add tree nav on left navigation blocks</strike></li>
+											<li><strike>Add Notification</strike> See HTML Basic Components tab</li>
+										</ol>
+									</div>
+								</div>
+						</div>
+						<div class="tab-pane  show" id="file3" role="tabpanel">
+
+							<# tab 3 content #>
+								<div class="mt-4">
+									<p>NOTIFICATIONS</p>
+									<input class="btn btn-primary" type="button" value="Error" id="error" />
+									<input class="btn btn-primary" type="button" value="Info" id="info" />
+									<input class="btn btn-primary" type="button" value="Warning" id="warning" />
+									<input class="btn btn-primary" type="button" value="Success" id="success" />
+								</div>
+								<hr>
+								<div>
+									<p>BASIC TABLE</p>
+									<div class="card">
+
+										<div class="card-body">
+											<table class="table table-responsive-sm">
+												<thead>
+													<tr>
+														<th>Username</th>
+														<th>Date registered</th>
+														<th>Role</th>
+														<th>Status</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Samppa Nori</td>
+														<td>2012/01/01</td>
+														<td>Member</td>
+														<td>
+															<span class="badge badge-success">Active</span>
+														</td>
+													</tr>
+													<tr>
+														<td>Estavan Lykos</td>
+														<td>2012/02/01</td>
+														<td>Staff</td>
+														<td>
+															<span class="badge badge-danger">Banned</span>
+														</td>
+													</tr>
+													<tr>
+														<td>Chetan Mohamed</td>
+														<td>2012/02/01</td>
+														<td>Admin</td>
+														<td>
+															<span class="badge badge-secondary">Inactive</span>
+														</td>
+													</tr>
+													<tr>
+														<td>Derick Maximinus</td>
+														<td>2012/03/01</td>
+														<td>Member</td>
+														<td>
+															<span class="badge badge-warning">Pending</span>
+														</td>
+													</tr>
+													<tr>
+														<td>Friderik Dávid</td>
+														<td>2012/01/21</td>
+														<td>Staff</td>
+														<td>
+															<span class="badge badge-success">Active</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<ul class="pagination">
+												<li class="page-item"><a class="page-link" href="#">Prev</a></li>
+												<li class="page-item active">
+													<a class="page-link" href="#">1</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item"><a class="page-link" href="#">4</a></li>
+												<li class="page-item"><a class="page-link" href="#">Next</a></li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12">
+					<div class="card card-accent-primary">
+						<div class="card-header">
+							Card with accent
+						</div>
+						<div class="card-body">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+			</div>
+		</div>
 	</div>
-</div>
-		
-		
-		
-<# editor.js #>
-<script src="<% url('a40e1813c679a5a526bcf5c591febfb0') %>" type="text/javascript" charset="utf-8"></script>
-<# ace.js #>
-<script src="<% url('67b29713f73f7f47aee5b39899564069') %>" type="text/javascript" charset="utf-8"></script>
-	
-	
-	
-	<i class="fas fa-asterisk text-primary" style="font-size: 8px;"></i>
-
-
-                <li class="nav-item" @click="closeFile(item.fileId)">x</li>
-
-<span v-if="item.dirty"><i class="fas fa-times" @click="closeFile(item.fileId)">X</i></span>
-
-
-
-
-<% include('dfacf61f0152fd8c61f4c08aeaca1d0c') %>
-			    <% include('309b39cf8c43d3230013513dfb2456f4') %>
-			    <% include('f0d287a293d5388b9b48791e567abfd4') %>
-                <% include('984c5a13b553668fa67192843d3301ee') %>
+</main>

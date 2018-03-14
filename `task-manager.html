@@ -1,0 +1,31 @@
+<% extends '94041a13b4adde65c4e80cd7590447ed' %>
+<% block content %>
+<$ super() $>
+	<main class="main">
+	<div class="container-fluid">
+		<div class="animated fadeIn">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card card-accent-primary panel panel-default">
+						<div class="card-body" style="min-height: 800px; height: auto;">
+							<div class="row">
+								<div class="col-sm-5">
+									<h3 class="card-title clearfix mb-0">Editor</h3>
+								</div>
+								<div class="col-sm-7">
+									<button type="button" class="btn btn-primary float-right ml-3 form-group" id="panel-fullscreen" title="Toggle fullscreen"><i class="fas fa-expand-arrows-alt"></i></button>
+									<button type="button" class="btn btn-primary float-right ml-3 form-group"><i class="far fa-edit"></i> Edit</button>
+									<button type="button" class="btn btn-primary float-right ml-3 form-group"><i class="fas fa-eye"></i> View</button>
+								</div>
+							</div>
+							<hr class="m-0">
+							<# editor window #>
+							<% include('99b66767ecb84559c5f7a16f5679a8db') %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<% endblock %>
