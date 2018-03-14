@@ -189,6 +189,29 @@ $(document).ready(function () {
 			});
 		});
 
+$("#alert-target").click(function () {
+    toastr["info"]("Blah blah blah blah!")
+});
+
+toastr.options = {
+  "closeButton": true,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": false,
+  "positionClass": "toast-top-right",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": 300,
+  "hideDuration": 1000,
+  "timeOut": 5000,
+  "extendedTimeOut": 1000,
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}  
+
+
 /* tabs 
 
 		$(".nav-tabs").on("click", "a", function (e) {
@@ -223,25 +246,5 @@ $('.content-link').on('click', function () {
 */
 
 
-$("#alert-target").click(function () {
-    toastr["info"]("I was launched via jQuery!")
-});
-
-toastr.options = {
-  "closeButton": true,
-  "debug": false,
-  "newestOnTop": false,
-  "progressBar": false,
-  "positionClass": "toast-top-right",
-  "preventDuplicates": false,
-  "onclick": null,
-  "showDuration": 300,
-  "hideDuration": 1000,
-  "timeOut": 5000,
-  "extendedTimeOut": 1000,
-  "showEasing": "swing",
-  "hideEasing": "linear",
-  "showMethod": "fadeIn",
-  "hideMethod": "fadeOut"
-}                    
+                  
    
