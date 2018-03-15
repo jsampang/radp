@@ -50,20 +50,55 @@
 						<div class="tab-pane  show" id="file3" role="tabpanel">
 
 							<# tab 3 content #>
-								<div class="mt-4">
-									<p>NOTIFICATIONS</p>
+								<h4>Notification</h4>
+								<div>
 									<input class="btn btn-primary" type="button" value="Error" id="error" />
 									<input class="btn btn-primary" type="button" value="Info" id="info" />
 									<input class="btn btn-primary" type="button" value="Warning" id="warning" />
 									<input class="btn btn-primary" type="button" value="Success" id="success" />
 								</div>
-								<hr>
+								<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); margin: 20px 0px 30px;">
+								<h4>404 Page</h4>
+								<p>
+									<a href="https://admin.rowboatsoftware.com/pages/error-page" target="_blank">
+										<button class="btn btn-primary">Page link</button>
+									</a>
+								</p>
+								<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); margin: 20px 0px 30px;">
+
+
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primaryModal">
+									Primary modal
+								</button>
+
+								<div class="modal fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+									<div class="modal-dialog modal-primary" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title">Modal title</h4>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">×</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p>One fine body…</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div>
+										</div>
+										<!-- /.modal-content -->
+									</div>
+									<!-- /.modal-dialog -->
+								</div>
+
 								<div>
-									<p>BASIC TABLE</p>
+									<h4>BASIC TABLE</h4>
 									<div class="card">
 
 										<div class="card-body">
-											<table class="table table-responsive-sm">
+											<table class="table table-responsive-sm table-bordered">
 												<thead>
 													<tr>
 														<th>Username</th>
@@ -129,28 +164,13 @@
 									</div>
 
 								</div>
+								<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); margin: 20px 0px 30px;">
+								<div></div>
 
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-12">
-					<div class="card card-accent-primary">
-						<div class="card-header">
-							Card with accent
-						</div>
-						<div class="card-body">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-						</div>
-					</div>
-				</div>
-
-
 			</div>
 		</div>
 	</div>
 </main>
-				
-				
-				
-				
-				<link rel="stylesheet" type="text/css" href="<% url('f43509da1ab68f79df9cbc9b2dc6a95e') %>">
