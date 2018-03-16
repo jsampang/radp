@@ -273,6 +273,7 @@ ul {
     cursor: pointer;
     transition: 0.3s;
     font-size: 14px;
+	  padding: 0px;
 }
 
 .right-tablinks .active {
@@ -280,7 +281,7 @@ ul {
     border-bottom: 1px solid #e4e6eb!important;
     background-color: #fff;
     padding-left: 31px!important;
-    margin-left: -8px;
+    margin-left: -1px;
     border-right: 3px solid #1badf8;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
