@@ -172,6 +172,7 @@ $(document).ready(function () {
 	});
 });
 
+/***** Notification *****/
 		$(function () {
 			$('#error').click(function () {
 				// make it not dissappear
@@ -189,6 +190,7 @@ $(document).ready(function () {
 			});
 		});
 
+/***** copy to clipboard *****/
 var clipboard = new Clipboard('.copy-button');
 
         clipboard.on('success', function (e) {
@@ -199,7 +201,7 @@ var clipboard = new Clipboard('.copy-button');
             console.log(e);
         });
 
-
+});
 /* tabs 
 
 		$(".nav-tabs").on("click", "a", function (e) {
