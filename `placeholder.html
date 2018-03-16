@@ -1,176 +1,37 @@
-<main class="main">
-	<div class="container-fluid">
-		<div class="animated fadeIn">
-			<div class="row">
-				<div class="col-md-12 pt-2 panel panel-default" style="background-color: #F4F3F4">
-					<a href="#" id="panel-fullscreen" title="Toggle fullscreen" class="toggle-fullscreen"><i class="fas fa-expand-arrows-alt"></i></a>
-					<ul class="nav nav-tabs" role="tablist">
-
-						<li class="nav-item">
-							<a class="nav-link active" data-toggle="tab" href="#file1" role="tab"><i class="fas fa-file-code"></i> File Editor &nbsp;&nbsp; 
-								<small><i class="fas fa-asterisk text-primary" style="font-size: 8px;"></i></small>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#file2" role="tab">
-								<i class="fas fa-file-code"></i> To Do List &nbsp;&nbsp;<span><i class="fas fa-times"></i></span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#file3" role="tab">
-								<i class="fas fa-file-code"></i> HTML Basic Components &nbsp;&nbsp;<span><i class="fas fa-times"></i></span>
-							</a>
-						</li>
-					</ul>
-
-					<div class="tab-content">
-						<div class="tab-pane active" id="file1" role="tabpanel">
-
-							<# editor window #>
-								<% include('99b66767ecb84559c5f7a16f5679a8db') %>
-
-						</div>
-						<div class="tab-pane" id="file2" role="tabpanel">
-
-							<# tab 2 content #>
-								<div class="m-3">
-									<div class="alert alert-secondary">
-										<ol style="padding:0px"><b>Things to do!</b>
-											<li><strike>Editable CSS </strike></li>
-											<li>Files and folders renaming and deleting</li>
-											<li>Tree structure going back to parent folder </li>
-											<li><strike>Click file - going to new tab</strike></li>
-											<li>Add a 404 page</li>
-											<li><strike>Add tree nav on left navigation blocks</strike></li>
-											<li><strike>Add Notification</strike> See HTML Basic Components tab</li>
-										</ol>
-									</div>
-								</div>
-						</div>
-						<div class="tab-pane  show" id="file3" role="tabpanel">
-
-							<# tab 3 content #>
-								<h4>Notification</h4>
-								<div>
-									<input class="btn btn-primary" type="button" value="Error" id="error" />
-									<input class="btn btn-primary" type="button" value="Info" id="info" />
-									<input class="btn btn-primary" type="button" value="Warning" id="warning" />
-									<input class="btn btn-primary" type="button" value="Success" id="success" />
-								</div>
-								<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); margin: 20px 0px 30px;">
-								<h4>404 Page</h4>
-								<p>
-									<a href="https://admin.rowboatsoftware.com/pages/error-page" target="_blank">
-										<button class="btn btn-primary">Page link</button>
-									</a>
-								</p>
-								<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); margin: 20px 0px 30px;">
+http://chimplyimage.appspot.com/images/samples/classic-spinner/animatedCircle.gif
 
 
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primaryModal">
-									Primary modal
-								</button>
+<div v-if="loading"><img src="<% url('d7c7bb197ac530ebd4d1ff08de049364') %>"></div>
 
-								<div class="modal fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
-									<div class="modal-dialog modal-primary" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">Modal title</h4>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">×</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<p>One fine body…</p>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary">Save changes</button>
-											</div>
-										</div>
-										<!-- /.modal-content -->
-									</div>
-									<!-- /.modal-dialog -->
-								</div>
 
-								<div>
-									<h4>BASIC TABLE</h4>
-									<div class="card">
+<div class="upload-btn-wrapper">
+  <button class="btn">Upload a file</button>
+  <input type="file" name="myfile" />
+</div>
 
-										<div class="card-body">
-											<table class="table table-responsive-sm table-bordered">
-												<thead>
-													<tr>
-														<th>Username</th>
-														<th>Date registered</th>
-														<th>Role</th>
-														<th>Status</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Samppa Nori</td>
-														<td>2012/01/01</td>
-														<td>Member</td>
-														<td>
-															<span class="badge badge-success">Active</span>
-														</td>
-													</tr>
-													<tr>
-														<td>Estavan Lykos</td>
-														<td>2012/02/01</td>
-														<td>Staff</td>
-														<td>
-															<span class="badge badge-danger">Banned</span>
-														</td>
-													</tr>
-													<tr>
-														<td>Chetan Mohamed</td>
-														<td>2012/02/01</td>
-														<td>Admin</td>
-														<td>
-															<span class="badge badge-secondary">Inactive</span>
-														</td>
-													</tr>
-													<tr>
-														<td>Derick Maximinus</td>
-														<td>2012/03/01</td>
-														<td>Member</td>
-														<td>
-															<span class="badge badge-warning">Pending</span>
-														</td>
-													</tr>
-													<tr>
-														<td>Friderik Dávid</td>
-														<td>2012/01/21</td>
-														<td>Staff</td>
-														<td>
-															<span class="badge badge-success">Active</span>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-											<ul class="pagination">
-												<li class="page-item"><a class="page-link" href="#">Prev</a></li>
-												<li class="page-item active">
-													<a class="page-link" href="#">1</a>
-												</li>
-												<li class="page-item"><a class="page-link" href="#">2</a></li>
-												<li class="page-item"><a class="page-link" href="#">3</a></li>
-												<li class="page-item"><a class="page-link" href="#">4</a></li>
-												<li class="page-item"><a class="page-link" href="#">Next</a></li>
-											</ul>
-										</div>
-									</div>
+<style>
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
 
-								</div>
-								<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); margin: 20px 0px 30px;">
-								<div></div>
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</main>
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+</style>
