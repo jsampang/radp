@@ -202,7 +202,7 @@ var clipboard = new Clipboard('.copy-button');
         });
 
 });
-/* tabs 
+/* tabs nav
 
 		$(".nav-tabs").on("click", "a", function (e) {
         e.preventDefault();
