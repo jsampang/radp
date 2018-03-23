@@ -1503,7 +1503,7 @@ body.is-loading #header .content .inner {
 		border-top: 0;
 	}
 	#header nav ul li a {
-		height: 3rem;
+		height: auto;
 		line-height: 3rem;
 		min-width: 0;
 		width: 100%;
