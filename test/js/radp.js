@@ -204,3 +204,21 @@ $('.content-link').on('click', function () {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+$(function(){
+  var toolbarOptions = [
+    ['bold', 'italic', 'underline', 'strike'],                  
+    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+		['blockquote', 'code-block'],
+		['link', 'image'],
+
+  ];
+
+  var quill = new Quill('#editor', {
+    modules: {
+      toolbar: toolbarOptions
+    },
+		placeholder: 'Write a comment or drag your files here...',
+    theme: 'snow'
+  });
+});
