@@ -201,3 +201,6 @@ $('.content-link').on('click', function () {
 });
 
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
