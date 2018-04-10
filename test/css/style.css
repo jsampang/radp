@@ -15071,7 +15071,7 @@ base-chart.chart {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	padding: 0;
-	color: #fff;
+	color: #333;
 	background: #ffffff;
 	box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.3);
 }
