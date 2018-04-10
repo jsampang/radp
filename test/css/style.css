@@ -211,7 +211,7 @@ a {
 
 a:hover {
 	color: #1a7fb0;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {
@@ -5629,7 +5629,7 @@ tbody.collapse.show {
 .nav-link,
 .navbar .dropdown-toggle {
 	display: block;
-	padding: 0.5rem 1rem;
+	padding: 0.625rem 1rem;
 }
 
 .nav-link:hover,
@@ -8222,6 +8222,8 @@ button.close {
 	border-bottom: 1px solid #e4e6eb;
 	border-top-left-radius: 0.3rem;
 	border-top-right-radius: 0.3rem;
+	background-color: #36a9e1;
+  color: #fff;
 }
 
 .modal-header .close {
@@ -14471,7 +14473,7 @@ base-chart.chart {
 }
 
 .main .container-fluid {
-	padding: 0 30px;
+	padding: 0 10px;
 	margin-top: 7px;
 }
 
@@ -15104,8 +15106,8 @@ base-chart.chart {
 
 .sidebar .sidebar-form .form-control {
 	color: #fff;
-	background: #22262e;
-	border: 0;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
 }
 
 .sidebar .sidebar-form .form-control::-webkit-input-placeholder {
@@ -15200,9 +15202,10 @@ base-chart.chart {
 .navbar .sidebar .dropdown-toggle {
 	display: block;
 	padding: 0.75rem 1rem;
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 	background: transparent;
+	font-weight: 500;
 }
 
 .sidebar .nav-link i,
@@ -15212,8 +15215,9 @@ base-chart.chart {
 	width: 20px;
 	margin: 0 0.5rem 0 0;
 	font-size: 14px;
-	color: #9da0a8;
+	color: #000;
 	text-align: center;
+	font-weight: 600;
 }
 
 .sidebar .nav-link .badge,
@@ -15226,8 +15230,9 @@ base-chart.chart {
 .sidebar .nav-link.active,
 .sidebar .navbar .active.dropdown-toggle,
 .navbar .sidebar .active.dropdown-toggle {
-	color: #fff;
-	background: #22262e;
+  color: #000;
+  background: #ececec;
+  border-left: 4px solid #53c5ff;
 }
 
 .sidebar .nav-link.active i,
@@ -15239,8 +15244,8 @@ base-chart.chart {
 .sidebar .nav-link:hover,
 .sidebar .navbar .dropdown-toggle:hover,
 .navbar .sidebar .dropdown-toggle:hover {
-	color: #fff;
-	background: #22262e;
+	color: #737373;
+  background: #e0e0e0;
 }
 
 .sidebar .nav-link:hover i,
@@ -15926,7 +15931,7 @@ base-chart.chart {
 }
 
 .sidebar .nav-dropdown.open {
-	background: #2d323c;
+	background: #afafaf;
 }
 
 .sidebar .nav-dropdown.open > .nav-dropdown-items {
@@ -16094,7 +16099,8 @@ base-chart.chart {
 	.sidebar-minimized .sidebar .nav-item:hover > .nav-link,
 	.sidebar-minimized .sidebar .navbar .nav-item:hover > .dropdown-toggle,
 	.navbar .sidebar-minimized .sidebar .nav-item:hover > .dropdown-toggle {
-		background: #22262e;
+		background: #969696;
+		color: #fff;
 	}
 	.sidebar-minimized .sidebar .nav-item:hover > .nav-link i,
 	.sidebar-minimized .sidebar .navbar .nav-item:hover > .dropdown-toggle i,
@@ -16129,7 +16135,7 @@ base-chart.chart {
 	.sidebar-minimized .sidebar .navbar .dropdown-toggle:hover,
 	.navbar .sidebar-minimized .sidebar .dropdown-toggle:hover {
 		width: 270px;
-		background: #22262e;
+		background: #a0a0a0;
 	}
 	.sidebar-minimized .sidebar .nav-link:hover .badge,
 	.sidebar-minimized .sidebar .navbar .dropdown-toggle:hover .badge,
@@ -16152,7 +16158,7 @@ base-chart.chart {
 	.sidebar-minimized .sidebar .nav > .nav-dropdown > .nav-dropdown-items {
 		display: none;
 		max-height: 1000px;
-		background: #383e4b;
+		background: #afafaf;
 	}
 	.sidebar-minimized .sidebar .nav > .nav-dropdown:hover {
 		background: #22262e;

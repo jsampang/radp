@@ -312,7 +312,7 @@ ul {
 .task .inbox .task-list .header .date {
 	margin-left: auto;
 	font-weight: 400;
-  font-size: 14px;
+	font-size: 14px;
 }
 
 .task .inbox .task-list .title {
@@ -422,5 +422,119 @@ ul {
 
 .fas {
 	color: #36a9e1;
-} 
+}
 
+.alert div {
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.task-notes {
+	margin-bottom: 30px;
+	margin-left: 21px;
+	margin-top: 30px;
+}
+
+.accordion,
+.card-task {
+	border-radius: 0px!important;
+	border-bottom-width: 0px!important;
+	margin-bottom: -1px!important;
+}
+
+.card-task,
+.social-box {
+	border-top-width: 0;
+	border-bottom-width: 2px;
+}
+
+.card-task {
+	margin-bottom: 1.5rem;
+}
+
+.card-task {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid #e4e6eb;
+	border-radius: 0.25rem;
+}
+
+.accordion a:link,
+.card-task a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.card-task .card-body {
+	border-bottom: 1px solid #ddd;
+}
+
+.accordion,
+.card-task .card-header {
+	padding: 10px;
+	margin-bottom: 0;
+	background-color: transparent;
+	border-bottom: 1px solid #ddd;
+	border-left: transparent;
+	border-left-width: 0px;
+	border-left-color: transparent;
+}
+
+.text-require {
+	color: #bf0707;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.wrapper-attach-a-file {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.upload-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.upload-btn input {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+	cursor: pointer;
+}
+
+.btn-link:hover {
+    color: #1a7fb0;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+
+}
+
+.btn-secondary-sort {
+    color: #151b1e;
+    background-color: #f0f2f7;
+    border-color: #c7cbd5;
+}
+
+input::placeholder {
+  color: #000!important;
+}
+
+.time-tracker-input {
+	border: 1px solid #a0d5ef; 
+	border-radius: .25rem;
+	
+}
