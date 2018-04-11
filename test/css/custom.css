@@ -540,3 +540,15 @@ input::placeholder {
 }
 
 
+.custom-upload div {
+  position: relative;
+  overflow: hidden;
+}
+.custom-upload input {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
